@@ -125,3 +125,21 @@
 	desc = "Increases stun duration from flashes and other light-based stuns."
 	cost = -2
 	var_changes = list("flash_mod" = 3.0)
+
+/datum/trait/dual_weakness_weak
+	name = "Dual Weakness (Minor)"
+	desc = "Combines Minor Burn Weakness and Minor Brute Weakness. Does not return as many trait points as a trade off for freeing up a trait slot."
+	cost = -1
+	var_changes = list("burn_mod" = 1.15, "brute_mod" = 1.15)
+
+/datum/trait/dual_weakness
+	name = "Dual Weakness"
+	desc = "Combines Burn Weakness and Brute Weakness. Does not return as many trait points as a trade off for freeing up a trait slot."
+	cost = -3
+	var_changes = list("burn_mod" = 1.25, "brute_mod" = 1.25)
+
+/datum/trait/dual_weakness_plus
+	name = "Dual Weakness (Major)"
+	desc = "Combines Major Burn Weakness and Major Brute Weakness. Does not return as many trait points as a trade off for freeing up a trait slot."
+	cost = -4
+	var_changes = list("burn_mod" = 1.5, "brute_mod" = 1.5)
