@@ -10,7 +10,7 @@
 	full_name = "ARFS Dallus"
 	path = "arfs"
 
-	lobby_icon = 'icons/misc/title.dmi'
+	lobby_icon = 'content_arfs/icons/misc/arfs_endeavor.dmi'
 	lobby_screens = list("arfs")
 
 	station_levels = list(
