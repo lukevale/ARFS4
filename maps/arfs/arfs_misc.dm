@@ -58,17 +58,22 @@
 //
 
 //Simulated
+/*
 /turf/simulated/open/virgo3b
 	edge_blending_priority = 0.5 //Turfs which also have e_b_p and higher than this will plop decorative edges onto this turf
 /turf/simulated/open/virgo3b/New()
 	..()
-	if(outdoors)
-		SSplanets.addTurf(src)
+	outdoor_turfs.Add(src)
 
 /turf/simulated/floor
 /turf/simulated/floor/virgo3b/New()
 	..()
-	if(outdoors)
-		SSplanets.addTurf(src)
+	outdoor_turfs.Add(src)
+*/
 
-
+/turf/unsimulated/wall/dungeonwall
+	oxygen = 0
+	nitrogen = 0
+	carbon_dioxide = 0
+	phoron = 0
+	temperature = T20C
