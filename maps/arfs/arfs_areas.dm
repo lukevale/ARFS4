@@ -28,6 +28,8 @@
 
 // CREWQUARTERS/DORM
 
+
+
 /area/crew_quarters/sauna
 	name = "\improper Sauna"
 	icon_state = "recreation_area"
