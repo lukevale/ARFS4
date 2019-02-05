@@ -143,3 +143,19 @@
 	desc = "Combines Major Burn Weakness and Major Brute Weakness. Does not return as many trait points as a trade off for freeing up a trait slot."
 	cost = -4
 	var_changes = list("burn_mod" = 1.5, "brute_mod" = 1.5)
+
+/datum/trait/cancer
+	name = "Late Stage Radiation Sickness"
+	desc = "Why? Why would you do this to yourself? +50% damage from brute & burn, -50% health, 300% weakness to flashes, Makes bones much easier to break, Makes you twice as vulnerable to electric shock, and makes you easier to knock over."
+	cost = -10
+	var_changes = list("burn_mod" = 1.5, "brute_mod" = 1.5, "flash_mod" = 3.0, "lightweight" = 0, "siemens_coefficient" = 2.0, "total_health" = 50)
+
+	apply(var/datum/species/S,var/mob/living/carbon/human/H)
+		..(S,H)
+		H.setMaxHealth(S.total_health)
+	
+/datum/trait/cancer/apply(var/datum/species/S,var/mob/living/carbon/human/H)
+	..(S,H)
+	for(var/obj/item/organ/external/O in H.organs)
+		O.min_broken_damage *= 0.5
+		O.min_bruised_damage *= 0.5
