@@ -1,6 +1,6 @@
 "a" = (/turf/unsimulated/wall,/area/asteroid/rogue/zone2)
 "b" = (/turf/space,/area/asteroid/rogue/zone2)
-"c" = (/obj/item/weapon/reagent_containers/food/snacks/watermelonslice,/turf/simulated/floor/cult,/area/asteroid/rogue/zone2)
+"c" = (/obj/item/weapon/reagent_containers/food/snacks/watermelonslice,/turf/unsimulated/floor/shuttle_ceiling,/area/asteroid/rogue/zone2)
 "d" = (/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/asteroid/rogue/zone2)
 
 (1,1,1) = {"
