@@ -2961,6 +2961,7 @@
 #include "content_arfs\code\donater\devices.dm"
 #include "content_arfs\code\donater\hats.dm"
 #include "content_arfs\code\donater\misc.dm"
+#include "content_arfs\code\donater\races.dm"
 #include "content_arfs\code\donater\suits.dm"
 #include "content_arfs\code\machinery\vending.dm"
 #include "content_arfs\code\objects\clothing\uniform.dm"

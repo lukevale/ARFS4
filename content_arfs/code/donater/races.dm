@@ -11,7 +11,8 @@
 	color_mult = 1
 //	color_blend = 0
 
-	blurb = ""
+	blurb = "Spce eevee? Space eevee!"
+	secondary_langs = list(LANGUAGE_CANILUNZT)
 
 	icobase = 'content_arfs/icons/mob/player/r_eevee_arf.dmi'    // Normal icon set.
 	deform = 'content_arfs/icons/mob/player/r_eevee_arf.dmi' // Mutated icon set.
