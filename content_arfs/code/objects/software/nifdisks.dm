@@ -214,7 +214,7 @@
 
 	stored = /datum/nifsoft/hidelaser
 
-//Soulcatcher - DO NOT ADD
+//Soulcatcher
 /obj/item/weapon/disk/nifsoft/soulcatcher
 	name = "NIFSoft Disk - Soul Catcher"
 	desc = "Contains software that allows the user to take backups of people's brains, and put into a VR space until cloned.\n\
