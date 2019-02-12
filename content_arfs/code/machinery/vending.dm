@@ -155,8 +155,47 @@
 		/obj/item/weapon/disk/nifsoft/heatsinks=1250,
 		/obj/item/weapon/disk/nifsoft/worldbend=100,)
 
+/obj/machinery/vending/arfsnifsoft/medical
+	name = "Medical NIFsoft"
+	products = list(
+		/obj/item/weapon/disk/nifsoft/armed=10,)
+	prices = list(
+		/obj/item/weapon/disk/nifsoft/armed=500,)
 
+/obj/machinery/vending/arfsnifsoft/science
+	name = "Science NIFsoft"
+	products = list(
+		/obj/item/weapon/disk/nifsoft/arsci=10,)
+	prices = list(
+		/obj/item/weapon/disk/nifsoft/arsci=500,)
 
+/obj/machinery/vending/arfsnifsoft/security
+	name = "Security NIFsoft"
+	products = list(
+		/obj/item/weapon/disk/nifsoft/arsec=10,)
+	prices = list(
+		/obj/item/weapon/disk/nifsoft/arciv=500,)
+
+/obj/machinery/vending/arfsnifsoft/engineering
+	name = "Engineering NIFsoft"
+	products = list(
+		/obj/item/weapon/disk/nifsoft/areng=10,)
+	prices = list(
+		/obj/item/weapon/disk/nifsoft/areng=500,)
+
+/obj/machinery/vending/arfsnifsoft/command
+	name = "Command NIFsoft"
+	products = list(
+		/obj/item/weapon/disk/nifsoft/aromni=10,)
+	prices = list(
+		/obj/item/weapon/disk/nifsoft/aromni=1000,)
+
+/obj/machinery/vending/arfsnifsoft/mining
+	name = "Mining NIFsoft"
+	products = list(
+		/obj/item/weapon/disk/nifsoft/material=10,)
+	prices = list(
+		/obj/item/weapon/disk/nifsoft/material=500,)
 
 /*//Custom vendors
 /obj/machinery/vending/nifsoft_shop/arfs

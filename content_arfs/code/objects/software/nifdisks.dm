@@ -214,7 +214,7 @@
 
 	stored = /datum/nifsoft/hidelaser
 
-//Soulcatcher - DO NOT ADD
+//Soulcatcher
 /obj/item/weapon/disk/nifsoft/soulcatcher
 	name = "NIFSoft Disk - Soul Catcher"
 	desc = "Contains software that allows the user to take backups of people's brains, and put into a VR space until cloned.\n\
@@ -236,7 +236,7 @@
 
 //Misc stuff
 /obj/item/weapon/disk/nifsoft/apc_recharge
-	name = "NIFSoft Disk - Communicator"
+	name = "NIFSoft Disk - APC Recharge"
 	desc = "Contains software to allow synthetics to draw power directly from APCs.\n\
 	It has a small label: \n\
 	\"Portable NIFSoft Disk. \n\
