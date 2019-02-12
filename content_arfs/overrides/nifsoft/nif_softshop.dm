@@ -39,7 +39,7 @@ var/list/banned_nifs = list("Mass Alteration",)
 			var/datum/stored_item/vending_product/product = new/datum/stored_item/vending_product(src, entry, name)
 
 			product.price = initial(NS.cost)
-			product.amount = 20
+			product.amount = 10
 			product.category = category
 
 			product_records.Add(product)
