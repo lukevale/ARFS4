@@ -236,7 +236,7 @@
 
 //Misc stuff
 /obj/item/weapon/disk/nifsoft/apc_recharge
-	name = "NIFSoft Disk - Communicator"
+	name = "NIFSoft Disk - APC Recharge"
 	desc = "Contains software to allow synthetics to draw power directly from APCs.\n\
 	It has a small label: \n\
 	\"Portable NIFSoft Disk. \n\
