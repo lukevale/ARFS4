@@ -1,7 +1,7 @@
 #define Z_LEVEL_MAIN_ARFS					1
 #define Z_LEVEL_CENTCOM_ARFS				2
 #define Z_LEVEL_EMPTY_ARFS					3
-#define Z_LEVEL_HOTEL_ARFS					4
+#define Z_LEVEL_ABANDONED_ASTEROID_ARFS		4
 #define Z_LEVEL_MINING_ARFS					5
 
 
@@ -28,11 +28,11 @@
 	player_levels = list(
 		Z_LEVEL_MAIN_ARFS,
 		Z_LEVEL_EMPTY_ARFS,
-		Z_LEVEL_HOTEL_ARFS,
+		Z_LEVEL_ABANDONED_ASTEROID_ARFS,
 		Z_LEVEL_MINING_ARFS
 		)
 
-	accessible_z_levels = list("1" = 5, "3" = 60, "4" = 0, "5" = 20) // The defines can't be used here sadly.
+	accessible_z_levels = list("1" = 5, "3" = 60, "4" = 10, "5" = 20) // The defines can't be used here sadly.
 
 	base_turf_by_z = list("5" = /turf/simulated/mineral/floor)
 
@@ -80,4 +80,9 @@
 /datum/map/arfs/perform_map_generation()
 	new /datum/random_map/automata/cave_system(null, 1, 1, Z_LEVEL_MINING_ARFS, world.maxx, world.maxy) // Create the mining Z-level.
 	new /datum/random_map/noise/ore(null, 1, 1, Z_LEVEL_MINING_ARFS, world.maxx, world.maxy)         // Create the mining ore distribution map.
+
+	new /datum/random_map/automata/cave_system(null, 1, 1, Z_LEVEL_ABANDONED_ASTEROID_ARFS, world.maxx, world.maxy) // Create the mining Z-level.
+	new /datum/random_map/noise/ore(null, 1, 1, Z_LEVEL_ABANDONED_ASTEROID_ARFS, world.maxx, world.maxy)         // Create the mining ore distribution map.
+
 	return 1
+
