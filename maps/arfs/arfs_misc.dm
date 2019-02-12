@@ -77,3 +77,32 @@
 	carbon_dioxide = 0
 	phoron = 0
 	temperature = T20C
+
+//teleporter
+/obj/effect/step_trigger/teleporter/to_underdark
+	icon = 'icons/obj/stairs.dmi'
+	icon_state = "stairs"
+	invisibility = 0
+	layer = 3.2
+/obj/effect/step_trigger/teleporter/to_underdark/initialize()
+	. = ..()
+	teleport_x = x
+	teleport_y = y
+	for(var/z_num in using_map.zlevels)
+		var/datum/map_z_level/Z = using_map.zlevels[z_num]
+		if(Z.name == "Asteroid Underdark")
+			teleport_z = Z.z
+
+/obj/effect/step_trigger/teleporter/from_underdark
+	icon = 'icons/obj/stairs.dmi'
+	icon_state = "stairs"
+	invisibility = 0
+	layer = 3.2
+/obj/effect/step_trigger/teleporter/from_underdark/initialize()
+	. = ..()
+	teleport_x = x
+	teleport_y = y
+	for(var/z_num in using_map.zlevels)
+		var/datum/map_z_level/Z = using_map.zlevels[z_num]
+		if(Z.name == "Asteroid Topside")
+			teleport_z = Z.z

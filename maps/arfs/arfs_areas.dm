@@ -110,3 +110,7 @@
 /area/maintenance/game_room
 	name = "Game Room"
 	icon_state = "amaint"
+
+//underdark
+/area/outpost/mining_main/lower_outpost
+	name = "Lower Asteroid Outpost"
