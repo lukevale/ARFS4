@@ -13,13 +13,13 @@
 	mappath = 'hard_mob.dmm'
 	cost = 15
 	allow_duplicates = TRUE
-/*
+
 /datum/map_template/underdark/boss_mob
 	name = "Underdark Boss Mob Spawn"
 	mappath = 'boss_mob.dmm'
 	cost = 60
 	allow_duplicates = FALSE
-*/
+
 /*
 /datum/map_template/underdark/whatever_treasure
 	name = "Some Kinda Treasure" //A name, only visible to admins
