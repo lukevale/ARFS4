@@ -8,11 +8,13 @@
 	#include "arfs-3.dmm"
 	#include "arfs-4.dmm"
 	#include "arfs-5.dmm"
+	#include "arfs-6.dmm"
 
 	#include "arfs_defines.dm"
 	#include "arfs_misc.dm"
 	#include "arfs_areas.dm"
 	#include "arfs_shuttles.dm"
+	#include "arfs_underdark.dm"
 
 	#define USING_MAP_DATUM /datum/map/arfs
 
