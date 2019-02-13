@@ -87,7 +87,7 @@
 	new /datum/random_map/automata/cave_system(null, 1, 1, Z_LEVEL_ABANDONED_ASTEROID_ARFS, world.maxx, world.maxy) // Create the mining Z-level.
 	new /datum/random_map/noise/ore(null, 1, 1, Z_LEVEL_ABANDONED_ASTEROID_ARFS, world.maxx, world.maxy)         // Create the mining ore distribution map.
 
-	seed_submaps(list(Z_LEVEL_MINING_DANGER_ARFS), 100, /area/mine/unexplored, /datum/map_template/underdark)
+	seed_submaps(list(Z_LEVEL_MINING_DANGER_ARFS), 300, /area/mine/unexplored, /datum/map_template/underdark)
 	new /datum/random_map/automata/cave_system(null, 1, 1, Z_LEVEL_MINING_DANGER_ARFS, world.maxx, world.maxy) // Create the mining Z-level.
 	new /datum/random_map/noise/ore(null, 1, 1, Z_LEVEL_MINING_DANGER_ARFS, world.maxx, world.maxy)         // Create the mining ore distribution map.
 
