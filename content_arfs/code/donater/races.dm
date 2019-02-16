@@ -1,5 +1,5 @@
 // EEVEE RACE - Restricted to ThingPony
-/datum/species/eevee
+/datum/species/human/eevee
 	name = "Eevee"
 	name_plural = "Eevees"
 
