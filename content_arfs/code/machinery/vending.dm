@@ -22,11 +22,12 @@
 		/obj/item/weapon/sextoy/dildo/bulletvibe=4,
 		/obj/item/weapon/sextoy/dildo/fleshlight=2,
 		/obj/item/weapon/sextoy/dildo/analbeads=2,
+		/obj/item/clothing/suit/stripper/stripper_pink=4,
+		/obj/item/clothing/suit/stripper/stripper_green=4)
 //		/obj/item/clothing/under/birthdaysuit=5,
 //		/obj/item/clothing/under/nuditypermit=5,
 //		/obj/item/clothing/suit/strapon = 5,
-//		/obj/item/clothing/suit/strapon/equine=5
-	)
+//		/obj/item/clothing/suit/strapon/equine=5)
 //	prices = list(/obj/item/clothing/under/nuditypermit=500)  Cactus please why u do dis  ~TK
 
 //Commented out because none of this vendors contents are ported yet.
@@ -416,3 +417,153 @@
 		currently_vending = null
 		GLOB.nanomanager.update_uis(src)
 	return 1*/
+
+//Clothing!
+
+//Hat vendor
+/obj/machinery/vending/hatvendor
+	name = "Hat Vendor"
+	desc = "A vending machine for hats!"
+	product_ads = "Top of the morning to ya!"
+	icon_state = "hats"
+	icon = 'content_arfs/icons/obj/vending.dmi'
+	vend_reply = "Enjoy!"
+	products = list(/obj/item/clothing/head/woodcirclet=5, /obj/item/clothing/head/sunflower_crown=5,
+	/obj/item/clothing/head/lavender_crown=5,/obj/item/clothing/head/poppy_crown=5,
+	/obj/item/clothing/head/pin=5, /obj/item/clothing/head/pin/pink=5,
+	/obj/item/clothing/head/pin/clover=5, /obj/item/clothing/head/pin/butterfly=5,
+	/obj/item/clothing/head/pin/magnetic=5,/obj/item/clothing/head/pin/flower=5,
+	/obj/item/clothing/head/pin/flower/blue=5,/obj/item/clothing/head/pin/flower/yellow=5,
+	/obj/item/clothing/head/pin/flower/pink=5,/obj/item/clothing/head/pin/flower/violet=5,
+	/obj/item/clothing/head/pin/flower/orange=5,/obj/item/clothing/head/pin/flower/white=5,
+	/obj/item/clothing/head/pin/bow=5,/obj/item/clothing/head/pin/bow/big=5,
+	/obj/item/clothing/head/pin/bow/big/red=5,/obj/item/clothing/head/powdered_wig=5,
+	/obj/item/clothing/head/that=5,/obj/item/clothing/head/redcoat=5,
+	/obj/item/clothing/head/mailman=5,/obj/item/clothing/head/plaguedoctorhat=5,
+	/obj/item/clothing/head/hasturhood=5,/obj/item/clothing/head/nursehat=5,
+	/obj/item/clothing/head/greenbandana=5,/obj/item/clothing/head/rabbitears=5,
+	/obj/item/clothing/head/flatcap=5,/obj/item/clothing/head/flatcap/grey=5,
+	/obj/item/clothing/head/bowler=5,/obj/item/clothing/head/beaverhat=5,
+	/obj/item/clothing/head/boaterhat=5,/obj/item/clothing/head/fedora=5,
+	/obj/item/clothing/head/fedora/brown=5,/obj/item/clothing/head/fedora/grey=5,
+	/obj/item/clothing/head/feathertrilby=5,/obj/item/clothing/head/fez=5,
+	/obj/item/clothing/head/cowboy_hat=5,/obj/item/clothing/head/cowboy_hat/black=5,
+	/obj/item/clothing/head/cowboy_hat/wide=5,/obj/item/clothing/head/cowboy_hat/small=5,
+	/obj/item/clothing/head/witchwig=5,/obj/item/clothing/head/chicken=5,
+	/obj/item/clothing/head/bearpelt=5,/obj/item/clothing/head/xenos=5,
+	/obj/item/clothing/head/philosopher_wig=5,/obj/item/clothing/head/orangebandana=5,
+	/obj/item/clothing/head/hijab=5,/obj/item/clothing/head/kippa=5,
+	/obj/item/clothing/head/turban=5,/obj/item/clothing/head/taqiyah=5,
+	/obj/item/clothing/head/beanie=5,/obj/item/clothing/head/beanie_loose=5,
+	/obj/item/clothing/head/beretg=5,/obj/item/clothing/head/sombrero=5,
+	/obj/item/clothing/head/headband/maid=5, /obj/item/clothing/head/kitty=5)
+
+/obj/machinery/vending/shoevendor
+	name = "Hat Vendor"
+	desc = "A vending machine for shoes!"
+	product_ads = "No need to go barefoot!"
+	icon_state = "shoes"
+	icon = 'content_arfs/icons/obj/vending.dmi'
+	vend_reply = "Shoooooesss"
+	products = list(/obj/item/clothing/shoes/boots=5,/obj/item/clothing/shoes/boots/cowboy=5,
+	/obj/item/clothing/shoes/boots/cowboy/classic=5,/obj/item/clothing/shoes/boots/cowboy/snakeskin=5,
+	/obj/item/clothing/shoes/boots/jackboots=5,/obj/item/clothing/shoes/boots/jackboots/toeless=5,
+	/obj/item/clothing/shoes/boots/workboots=5,/obj/item/clothing/shoes/boots/workboots/toeless=5,
+	/obj/item/clothing/shoes/boots/winter=5,/obj/item/clothing/shoes/black=5,
+	/obj/item/clothing/shoes/brown=5,/obj/item/clothing/shoes/blue=5,
+	/obj/item/clothing/shoes/green=5,/obj/item/clothing/shoes/yellow=5,
+	/obj/item/clothing/shoes/purple=5,/obj/item/clothing/shoes/red=5,
+	/obj/item/clothing/shoes/white=5,/obj/item/clothing/shoes/leather=5,
+	/obj/item/clothing/shoes/rainbow=5,/obj/item/clothing/shoes/flats=5,
+	/obj/item/clothing/shoes/flats/white=5,/obj/item/clothing/shoes/flats/white/color=5,
+	/obj/item/clothing/shoes/flats/red=5,/obj/item/clothing/shoes/flats/purple=5,
+	/obj/item/clothing/shoes/flats/blue=5,/obj/item/clothing/shoes/flats/brown=5,
+	/obj/item/clothing/shoes/flats/orange=5,/obj/item/clothing/shoes/orange=5,
+	/obj/item/clothing/shoes/hitops=5,/obj/item/clothing/shoes/hitops/red=5,
+	/obj/item/clothing/shoes/hitops/brown=5,/obj/item/clothing/shoes/hitops/black=5,
+	/obj/item/clothing/shoes/hitops/orange=5,/obj/item/clothing/shoes/hitops/blue=5,
+	/obj/item/clothing/shoes/hitops/green=5,/obj/item/clothing/shoes/hitops/purple=5,
+	/obj/item/clothing/shoes/hitops/yellow=5,/obj/item/clothing/shoes/mime=5,
+	/obj/item/clothing/shoes/dress=5,/obj/item/clothing/shoes/dress/white=5,
+	/obj/item/clothing/shoes/sandal=5,/obj/item/clothing/shoes/sandal/marisa=5,
+	/obj/item/clothing/shoes/clown_shoes=5,/obj/item/clothing/shoes/slippers=5,
+	/obj/item/clothing/shoes/laceup=5,/obj/item/clothing/shoes/swimmingfins=5,
+	/obj/item/clothing/shoes/flipflop=5,/obj/item/clothing/shoes/athletic=5,
+	/obj/item/clothing/shoes/skater=5,/obj/item/clothing/shoes/heels=5,
+	/obj/item/clothing/shoes/footwraps=5,/obj/item/clothing/shoes/griffin=5)
+
+/obj/machinery/vending/suitvendor
+	name = "Suit Vendor"
+	desc = "A vending machine for suits and jackets!"
+	product_ads = "Snazzy!"
+	icon_state = "suits"
+	icon = 'content_arfs/icons/obj/vending.dmi'
+	vend_reply = "Looking good!"
+	products = list(/obj/item/clothing/suit/greatcoat=5,/obj/item/clothing/suit/johnny_coat=5,
+	/obj/item/clothing/suit/judgerobe=5,/obj/item/clothing/suit/storage/apron/overalls=5,
+	/obj/item/clothing/suit/hastur=5,/obj/item/clothing/suit/imperium_monk=5,
+	/obj/item/clothing/suit/chickensuit=5,/obj/item/clothing/suit/monkeysuit=5,
+	/obj/item/clothing/suit/holidaypriest=5,/obj/item/clothing/suit/cardborg=5,
+	/obj/item/clothing/suit/iasexy=5,/obj/item/clothing/suit/sexyminer=5,
+	/obj/item/clothing/suit/sumo=5,/obj/item/clothing/suit/hackercost=5,
+	/obj/item/clothing/suit/lumber=5,/obj/item/clothing/suit/ianshirt=5,
+	/obj/item/clothing/suit/kimono=5,/obj/item/clothing/suit/leathercoat=5,
+	/obj/item/clothing/suit/browncoat=5,/obj/item/clothing/suit/neocoat=5,
+	/obj/item/clothing/suit/customs=5,/obj/item/clothing/suit/storage/greyjacket=5,
+	/obj/item/clothing/suit/storage/trench=5,/obj/item/clothing/suit/storage/trench/grey=5,
+	/obj/item/clothing/suit/storage/toggle/peacoat=5,/obj/item/clothing/suit/storage/duster=5,
+	/obj/item/clothing/suit/xenos=5,/obj/item/clothing/suit/jacket/puffer=5,
+	/obj/item/clothing/suit/jacket/puffer/vest=5,/obj/item/clothing/suit/storage/miljacket=5,
+	/obj/item/clothing/suit/storage/miljacket/alt=5,/obj/item/clothing/suit/storage/miljacket/green=5,
+	/obj/item/clothing/suit/storage/toggle/bomber=5,/obj/item/clothing/suit/storage/bomber/alt=5,
+	/obj/item/clothing/suit/storage/toggle/leather_jacket=5,/obj/item/clothing/suit/storage/toggle/leather_jacket/sleeveless=5,
+	/obj/item/clothing/suit/storage/leather_jacket_alt=5,/obj/item/clothing/suit/storage/toggle/brown_jacket=5,
+	/obj/item/clothing/suit/storage/toggle/brown_jacket/sleeveless=5,/obj/item/clothing/suit/storage/toggle/denim_jacket=5,
+	/obj/item/clothing/suit/storage/toggle/denim_jacket/sleeveless=5,/obj/item/clothing/suit/storage/toggle/hoodie=5,
+	/obj/item/clothing/suit/storage/toggle/hoodie/black=5,/obj/item/clothing/suit/storage/toggle/hoodie/red=5,
+	/obj/item/clothing/suit/storage/toggle/hoodie/blue=5,
+	/obj/item/clothing/suit/storage/toggle/hoodie/orange=5,/obj/item/clothing/suit/storage/toggle/hoodie/yellow=5,
+	/obj/item/clothing/suit/storage/toggle/hoodie/cti=5,/obj/item/clothing/suit/storage/toggle/hoodie/mu=5,
+	/obj/item/clothing/suit/storage/toggle/hoodie/nt=5,/obj/item/clothing/suit/storage/toggle/hoodie/smw=5,
+	/obj/item/clothing/suit/storage/toggle/hoodie/nrti=5,/obj/item/clothing/suit/whitedress=5,
+	/obj/item/clothing/suit/varsity=5,/obj/item/clothing/suit/varsity/red=5,
+	/obj/item/clothing/suit/varsity/purple=5,/obj/item/clothing/suit/varsity/green=5,
+	/obj/item/clothing/suit/varsity/blue=5,/obj/item/clothing/suit/varsity/brown=5,
+	/obj/item/clothing/suit/storage/toggle/track=5,/obj/item/clothing/suit/storage/toggle/track/blue=5,
+	/obj/item/clothing/suit/storage/toggle/track/green=5,/obj/item/clothing/suit/storage/toggle/track/red=5,
+	/obj/item/clothing/suit/storage/toggle/track/white=5,/obj/item/clothing/suit/storage/flannel=5,
+	/obj/item/clothing/suit/storage/flannel/red=5,/obj/item/clothing/suit/storage/flannel/aqua=5,
+	/obj/item/clothing/suit/storage/flannel/brown=5,/obj/item/clothing/suit/storage/toggle/greengov=5,
+	/obj/item/clothing/suit/storage/snowsuit=5)
+
+/obj/machinery/vending/clothingvendor
+	name = "Clothing Vendor"
+	desc = "A vending machine for normal clothiing!"
+	product_ads = "Come get dressed!"
+	icon_state = "clothes"
+	icon = 'content_arfs/icons/obj/vending.dmi'
+	vend_reply = "Looking good!"
+	products = list(/obj/item/clothing/under/pj/red=5,/obj/item/clothing/under/pj/blue=5,
+	/obj/item/clothing/under/scratch=5,/obj/item/clothing/under/scratch/skirt=5,
+	/obj/item/clothing/under/sl_suit=5,/obj/item/clothing/under/waiter=5,
+	/obj/item/clothing/under/customs=5,/obj/item/clothing/under/customs/khaki=5,
+	/obj/item/clothing/under/rank/mailman=5,/obj/item/clothing/under/sexyclown=5,
+	/obj/item/clothing/under/rank/vice=5,/obj/item/clothing/under/rank/centcom=5,
+	/obj/item/clothing/under/owl=5,/obj/item/clothing/under/johnny=5,
+	/obj/item/clothing/under/color/rainbow=5,/obj/item/clothing/under/psysuit=5,
+	/obj/item/clothing/under/gentlesuit=5,/obj/item/clothing/under/gentlesuit/skirt=5,
+	/obj/item/clothing/under/suit_jacket=5,/obj/item/clothing/under/suit_jacket/really_black=5,
+	/obj/item/clothing/under/suit_jacket/really_black/skirt=5,/obj/item/clothing/under/suit_jacket/female=5,
+	/obj/item/clothing/under/suit_jacket/female/skirt=5,/obj/item/clothing/under/suit_jacket/red=5,
+	/obj/item/clothing/under/suit_jacket/red/skirt=5,/obj/item/clothing/under/overalls=5,
+	/obj/item/clothing/under/kilt=5,/obj/item/clothing/under/sexymime=5,
+	/obj/item/clothing/under/dress/blacktango=5,/obj/item/clothing/under/dress/blacktango/alt=5,
+	/obj/item/clothing/under/dress/stripeddress=5,/obj/item/clothing/under/dress/sailordress=5,
+	/obj/item/clothing/under/dress/redeveninggown=5,/obj/item/clothing/under/dress/maid=5,
+	/obj/item/clothing/under/dress/maid/janitor=5,/obj/item/clothing/under/dress/maid/sexy=5,
+	/obj/item/clothing/under/dress/dress_fire=5,/obj/item/clothing/under/dress/dress_green=5,
+	/obj/item/clothing/under/dress/dress_orange=5,/obj/item/clothing/under/dress/dress_pink=5,
+	/obj/item/clothing/under/dress/dress_yellow=5,/obj/item/clothing/under/dress/dress_saloon=5,
+	/obj/item/clothing/under/dress/black_corset=5,/obj/item/clothing/under/dress/flower_dress=5,
+	/obj/item/clothing/under/dress/red_swept_dress=5,/obj/item/clothing/under/dress/flamenco=5,
+	/obj/item/clothing/under/dress/westernbustle=5)
