@@ -459,7 +459,7 @@
 	/obj/item/clothing/head/headband/maid=5, /obj/item/clothing/head/kitty=5)
 
 /obj/machinery/vending/shoevendor
-	name = "Hat Vendor"
+	name = "shoe Vendor"
 	desc = "A vending machine for shoes!"
 	product_ads = "No need to go barefoot!"
 	icon_state = "shoes"
