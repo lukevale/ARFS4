@@ -56,18 +56,18 @@
 			var/turf/T = get_turf(src)
 			var/datum/gas_mixture/env = T.return_air()
 			if(env)
-				my_mob.minbodytemp = env.temperature * 0.8
-				my_mob.maxbodytemp = env.temperature * 1.2
+				my_mob.minbodytemp = 0
+				my_mob.maxbodytemp = 300
 
-				var/list/gaslist = env.gas
-				my_mob.min_oxy = gaslist["oxygen"] * 0.8
-				my_mob.min_tox = gaslist["phoron"] * 0.8
-				my_mob.min_n2 = gaslist["nitrogen"] * 0.8
-				my_mob.min_co2 = gaslist["carbon_dioxide"] * 0.8
-				my_mob.max_oxy = gaslist["oxygen"] * 1.2
-				my_mob.max_tox = gaslist["phoron"] * 1.2
-				my_mob.max_n2 = gaslist["nitrogen"] * 1.2
-				my_mob.max_co2 = gaslist["carbon_dioxide"] * 1.2
+				//var/list/gaslist = env.gas
+				my_mob.min_oxy = 0
+				my_mob.min_tox = 0
+				my_mob.min_n2 = 0
+				my_mob.min_co2 = 0
+				my_mob.max_oxy = 100
+				my_mob.max_tox = 2
+				my_mob.max_n2 = 100
+				my_mob.max_co2 = 100
 
 		if(guard)
 			my_mob.returns_home = TRUE
