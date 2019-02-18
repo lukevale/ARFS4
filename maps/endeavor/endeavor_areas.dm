@@ -104,6 +104,8 @@
 /area/crew_quarters/vip_lounge
 	name = "VIP Lounge"
 
+/area/crew_quarters/vr_lounge
+	name = "VR Lounge"
 
 //Medbay
 /area/medical/medbay
@@ -111,7 +113,13 @@
 
 
 /area/construction/deckthree
-	name = "\improper Deck Three Construction Area"
+	name = "\improper Construction Area Deck Three"
+	icon_state = "yellow"
+/area/construction/deckfour
+	name = "\improper Construction Area Deck Four"
+	icon_state = "yellow"
+/area/construction/deckfive
+	name = "\improper Construction Area Deck Five"
 	icon_state = "yellow"
 
 //Mining
@@ -205,3 +213,44 @@ area/security/hallway
 	icon_state = "ai_chamber"
 	ambience = AMBIENCE_AI
 
+//Explorer stuff
+/area/explorer/excursion_dock
+	name = "\improper Excursion Shuttle Dock"
+/area/explorer/explorer_prep
+	name = "\improper Explorer Prep Room"
+/area/explorer/explorer_meeting
+	name = "\improper Explorer Meeting Room"
+/area/explorer/pathfinder_office
+	name = "\improper Pathfinder's Office"
+
+/area/shuttle/excursion
+	name = "\improper Excursion Shuttle"
+	icon_state = "shuttle2"
+	base_turf = /turf/space
+
+/area/shuttle/excursion/endeavor
+	name = "\improper Excursion Shuttle - Endeavor"
+	base_turf = /turf/simulated/floor/reinforced
+
+/area/shuttle/excursion/endeavor_nearby
+	name = "\improper Excursion Shuttle - Endeavor Near"
+
+/area/shuttle/excursion/space
+	name = "\improper Excursion Shuttle - Space"
+
+/area/shuttle/excursion/space_moving
+	name = "\improper Excursion Shuttle - Space Moving"
+	base_turf = /turf/space/transit/north
+/*
+/area/shuttle/excursion/bluespace
+	name = "\improper Excursion Shuttle - Bluespace"
+	base_turf = /turf/space/bluespace
+
+/area/shuttle/excursion/sand_moving
+	name = "\improper Excursion Shuttle - Sand Transit"
+	base_turf = /turf/space/sandyscroll
+
+/area/shuttle/excursion/virgo3b_sky
+	name = "\improper Excursion Shuttle - Virgo3b Sky"
+	base_turf = /turf/simulated/sky
+*/

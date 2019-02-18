@@ -10,8 +10,6 @@
 	dock_target_offsite = "centcom_dock"
 	move_time = SHUTTLE_TRANSIT_DURATION_RETURN
 
-
-
 //Mining
 /datum/shuttle/ferry/mining
 	name = "Mining"
@@ -24,3 +22,15 @@
 
 /obj/machinery/computer/shuttle_control/mining
 	name = "mining shuttle control console"
+
+
+//Supply
+/datum/shuttle/ferry/supply/cargo
+	name = "Supply"
+	location = 1
+	warmup_time = 10
+	area_offsite = /area/supply/dock
+	area_station = /area/supply/station
+	docking_controller_tag = "supply_shuttle"
+	dock_target_station = "cargo_bay"
+	flags = SHUTTLE_FLAGS_PROCESS|SHUTTLE_FLAGS_SUPPLY

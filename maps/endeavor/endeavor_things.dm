@@ -1,13 +1,16 @@
+//Full tile windows
 /obj/structure/window/reinforced/polarized/full
 	dir = SOUTHWEST
 	icon_state = "fwindow"
 	maxhealth = 80
-
-
 /obj/structure/window/phoronreinforced/full
 	dir = SOUTHWEST
 	maxhealth = 160
 	icon_state = "phoronwindow0"
+
+//Exterior hull looks different in the map editor
+/turf/simulated/wall/rshull
+	icon_state = "hull"
 
 //Endeavor map_data obj
 /obj/effect/landmark/map_data/endeavor
@@ -48,6 +51,14 @@
 	department = "Security"
 /obj/machinery/photocopier/faxmachine/bridge
 	department = "Bridge"
+
+//
+/obj/machinery/computer/shuttle_control/mining
+	name = "mining shuttle control console"
+/obj/machinery/computer/shuttle_control/research
+	name = "research shuttle control console"
+
+
 
 /*
 //Departure shuttle doors
@@ -131,3 +142,33 @@
 //Floor decals
 /obj/effect/floor_decal
 	layer = TURF_LAYER //Help mappers see pipes and other things on the 2.1 layer
+
+//"Red" Armory Door
+/obj/machinery/door/airlock/security/armory
+	name = "Red Armory"
+	//color = ""
+
+/obj/machinery/door/airlock/security/armory/allowed(mob/user)
+	if(get_security_level() in list("green","blue"))
+		return FALSE
+
+	return ..(user)
+
+//Excursion shuttle gun cabinet
+/obj/structure/closet/secure_closet/guncabinet/excursion
+	name = "expedition weaponry cabinet"
+	req_one_access = list(access_explorer,access_armory)
+
+/obj/structure/closet/secure_closet/guncabinet/excursion/New()
+	..()
+	for(var/i = 1 to 3)
+		new /obj/item/weapon/gun/energy/frontier/locked(src)
+
+//Air scrubbers for shuttles, always on
+/obj/machinery/portable_atmospherics/powered/scrubber/huge/stationary/alwayson
+	name = "\improper Air Scrubber"
+	icon_state = "scrubber:1"
+	on = TRUE
+
+/obj/machinery/portable_atmospherics/powered/scrubber/huge/stationary/alwayson/powered()
+	return TRUE // Always be powered

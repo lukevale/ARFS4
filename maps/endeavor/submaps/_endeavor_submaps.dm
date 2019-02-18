@@ -6,6 +6,7 @@
 
 //////////////////////////////////////////////////////////////////////////////
 /// Static Load
+#include "endeavor_misc.dmm"
 /datum/map_template/endeavor_lateload/endeavor_misc
 	name = "Endeavor - Misc"
 	desc = "Misc areas, like some transit areas, holodecks, merc area."
@@ -17,6 +18,7 @@
 	name = "Misc"
 	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED
 
+#include "endeavor_ships.dmm"
 /datum/map_template/endeavor_lateload/Endeavor_ships
 	name = "Endeavor - Ships"
 	desc = "Ship transit map and whatnot."
