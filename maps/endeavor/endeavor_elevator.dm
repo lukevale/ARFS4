@@ -1,4 +1,5 @@
 //Turbolift stuff
+//Endeavor ship main elevator
 /obj/turbolift_map_holder/endeavor
 	name = "Endeavor Elevator"
 	depth = 5

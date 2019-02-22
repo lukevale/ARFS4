@@ -15,6 +15,8 @@
 	#include "endeavor-04-ship4.dmm" 		//Deck 4
 	#include "endeavor-05-ship5.dmm" 		//Deck 5
 	#include "endeavor-06-centcomm.dmm" 	//CentComm
+	#include "endeavor-07-mining1.dmm"
+	#include "endeavor-08-mining2.dmm"
 
 	#include "submaps/_endeavor_submaps.dm"
 

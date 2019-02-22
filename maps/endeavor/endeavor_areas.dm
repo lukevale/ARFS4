@@ -44,16 +44,21 @@
 
 //Turbolift areas
 /area/turbolift/endeavor/deckone
-	name = "Deck 1 - Medical, Research, Mining, Telecommunications, Gateway"
+	name = "Deck 1 - Medical, Research, Mining Dock, Telecommunications, Gateway"
 /area/turbolift/endeavor/decktwo
-	name = "Deck 2 - Maintenance, Engineering, Life Support"
+	name = "Deck 2 - Maintenance, Engineering, Life Support, VIP Lounge"
 /area/turbolift/endeavor/deckthree
 	name = "Deck 3 - Bar, Bridge, Cryogenics, Cafeteria, Hydroponics, Pool"
 /area/turbolift/endeavor/deckfour
-	name = "Deck 4 - Cargo Bay, Departures, Security, Excursion Shuttle"
+	name = "Deck 4 - Cargo Bay, Departures, Security, Excursion Dock"
 /area/turbolift/endeavor/deckfive
-	name = "Deck 5 - Dormitories, Holodeck, Laundry"
+	name = "Deck 5 - Dormitories, Holodeck, Laundry, Civilian Teleporter"
 
+//Mining turbolift
+/area/turbolift/mining/high
+	name = "Asteroid Surface - 0m"
+/area/turbolift/mining/low
+	name = "Asteroid Interior - 1000m"
 
 //Electrical substations
 /area/maintenance/substation/deckone
@@ -110,7 +115,10 @@
 //Medbay
 /area/medical/medbay
 	name = "\improper Medbay Hallway"
-
+/area/medical/medbay_secondary_storage
+	name = "\improper Medbay Secondary Storage"
+	icon_state = "medbay_primary_storage"
+	music = 'sound/ambience/signal.ogg'
 
 /area/construction/deckthree
 	name = "\improper Construction Area Deck Three"
@@ -137,9 +145,32 @@
 	name = "\improper Mining Maintenance"
 /area/quartermaster/mining/warehouse
 	name = "\improper Mining Warehouse"
+
+/area/outpost/mining_main/main
+	name = "\improper Endeavor Mining Module"
+	icon_state = "outpost_mine_main"
+/area/outpost/mining_main/elevator
+	name = "\improper Mining Elevator"
+	icon_state = "outpost_mine_main"
+
+
 //Mining Shuttle
 /area/shuttle/mining
 	name = "\improper Mining Shuttle"
+
+//Outside mining areas
+/area/mine/explored/high
+	name = "Asteroid Surface"
+	icon_state = "explored"
+/area/mine/unexplored/high
+	name = "Asteroid Surface"
+	icon_state = "unexplored"
+/area/mine/explored/low
+	name = "Asteroid Interior"
+	icon_state = "explored"
+/area/mine/unexplored/low
+	name = "Asteroid Interior"
+	icon_state = "unexplored"
 
 //Security
 area/security/hallway

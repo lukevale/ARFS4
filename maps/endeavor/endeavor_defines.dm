@@ -5,8 +5,10 @@
 #define Z_LEVEL_ENDEAVOR_FOUR			4
 #define Z_LEVEL_ENDEAVOR_FIVE			5
 #define Z_LEVEL_CENTCOM					6
-#define Z_LEVEL_SHIPS					7
-#define Z_LEVEL_MISC					8
+#define Z_LEVEL_MINING_LOW				7
+#define Z_LEVEL_MINING_HIGH				8
+#define Z_LEVEL_SHIPS					9
+#define Z_LEVEL_MISC					10
 
 
 
@@ -71,15 +73,31 @@
 							)
 
 	allowed_spawns = list("Arrivals Shuttle","Gateway", "Cryogenic Storage", "Cyborg Storage")
-	spawnpoint_died = /datum/spawnpoint/cryo
-	spawnpoint_left = /datum/spawnpoint/cryo
+	spawnpoint_died = /datum/spawnpoint/arrivals
+	spawnpoint_left = /datum/spawnpoint/arrivals
 	spawnpoint_stayed = /datum/spawnpoint/cryo
+
+	lateload_z_levels = list(
+		list("Endeavor - Misc","Endeavor - Ships") //Stock Tether lateload maps
+		)
+
+/datum/map/endeavor/perform_map_generation()
+
+	new /datum/random_map/automata/cave_system/no_cracks(null, 9, 9, Z_LEVEL_MINING_HIGH, 192, 192) // Create the mining Z-level.
+	new /datum/random_map/noise/ore(null, 9, 9, Z_LEVEL_MINING_HIGH, 192, 192)         // Create the mining ore distribution map.
+
+
+//	seed_submaps(list(Z_LEVEL_MINING_LOW), 300, /area/mine/unexplored/low, /datum/map_template) //We don't have any templates to spawn yet
+	new /datum/random_map/automata/cave_system/no_cracks(null, 9, 9, Z_LEVEL_MINING_LOW, 192, 192) // Create the mining Z-level.
+	new /datum/random_map/noise/ore(null, 9, 9, Z_LEVEL_MINING_LOW, 192, 192)         // Create the mining ore distribution map.
+
+	return 1
 
 // Short range computers see only the main levels
 /datum/map/endeavor/get_map_levels(var/srcz, var/long_range = TRUE)
 	if (long_range && (srcz in map_levels))
 		return map_levels
-	else if (srcz >= 1 && srcz <= 5)
+	else if (srcz >= Z_LEVEL_BOTTOM_DECK && srcz <= Z_LEVEL_TOP_DECK)
 		return list(
 			Z_LEVEL_ENDEAVOR_ONE,
 			Z_LEVEL_ENDEAVOR_TWO,
@@ -128,3 +146,19 @@
 	name = "Central Command"
 	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_CONTACT|MAP_LEVEL_SEALED
 	base_turf = /turf/space
+
+
+/datum/map_z_level/endeavor/mining
+	name = "Central Command"
+	flags = MAP_LEVEL_CONTACT|MAP_LEVEL_PLAYER|MAP_LEVEL_SEALED
+	transit_chance = 0
+
+/datum/map_z_level/endeavor/mining/low
+	name = "Asteroid Interior"
+	z = Z_LEVEL_MINING_LOW
+	base_turf = /turf/simulated/mineral/floor/vacuum
+
+/datum/map_z_level/endeavor/mining/high
+	name = "Asteroid Surface"
+	z = Z_LEVEL_MINING_HIGH
+	base_turf = /turf/simulated/mineral/floor/vacuum
