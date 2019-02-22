@@ -2,51 +2,56 @@
 	name = "Glaceon"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
-	icon_state = "glaceonsears"
-	do_colouration = 1
-
+	icon_state = "glaceon"
+	do_colouration = 0
+/*Commenting this one out, unneeded and doesn't look good
 /datum/sprite_accessory/ears/eevee
 	name = "Eevee"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
 	icon_state = "eeveeears"
 	do_colouration = 1
-
-/datum/sprite_accessory/ears/glowfen
+*/
+/datum/sprite_accessory/ears/glowfen //Fixed
 	name = "Glowfen"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
 	icon_state = "glowfenears"
 	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
 
+/*Just...yeah. Leave this one out for now.
 /datum/sprite_accessory/ears/grovyle
 	name = "Grovyle"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
 	icon_state = "grovyleears"
 	do_colouration = 1
-
+*/
 /datum/sprite_accessory/ears/lopunny
 	name = "Lopunny"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
 	icon_state = "lopunnyears"
-	do_colouration = 1
+	do_colouration = 0
+	ckeys_allowed = list("killbow")
 
-/datum/sprite_accessory/ears/tiger
+/datum/sprite_accessory/ears/tiger //Fixed
 	name = "Tiger"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
 	icon_state = "tigerears"
 	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "tigerearsstripe"
 
-/datum/sprite_accessory/ears/vulpix
+/datum/sprite_accessory/ears/vulpix //Fixed
 	name = "Vulpix"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
 	icon_state = "vulpixears"
-	do_colouration = 1
 
+/*
 /datum/sprite_accessory/ears/rena
 	name = "Rena"
 	desc = ""
@@ -308,3 +313,4 @@
 	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
 	icon_state = "zangooseears"
 	do_colouration = 1
+*/
