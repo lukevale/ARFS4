@@ -211,55 +211,27 @@
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "rattatatail_s"
 	do_colouration = 0
-/* Soon
+
 /datum/sprite_accessory/tail/pikachu
 	name = "Pikachu"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "pikachutail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/raichu
 	name = "Raichu"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "raichutail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/gsogt
-	name = "Lizard (alt)"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "gsogtail_s"
-	ani_state = "gsogtailw_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/tiger
-	name = "Tiger"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "tigertail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/rena
-	name = "Renamon"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "renatail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/vulpix
 	name = "Vulpix"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "vulpixtail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/orca
 	name = "Orca"
@@ -268,6 +240,7 @@
 	icon_state = "orcatail_s"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
+	extra_overlay = "orcatailmarking"
 
 /datum/sprite_accessory/tail/skunk
 	name = "Skunk"
@@ -275,15 +248,8 @@
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "skunktail_s"
 	do_colouration = 1
-
-/datum/sprite_accessory/tail/squirrel
-	name = "Squirrel (alt)"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "squirreltail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
+	extra_overlay = "skunktailstripealt"
+/* Just for now, same as Absol ears.
 /datum/sprite_accessory/tail/absol
 	name = "Absol"
 	desc = ""
@@ -291,17 +257,10 @@
 	icon_state = "absoltail"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
-
-/datum/sprite_accessory/tail/bear
-	name = "Bear"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "beartail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+*/
 
 /datum/sprite_accessory/tail/cow
-	name = "Cow"
+	name = "Cow, alt"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "cowtail"
@@ -331,28 +290,13 @@
 	icon_state = "dalmatiantail"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
-
-/datum/sprite_accessory/tail/deer
-	name = "Deer"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "deertail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+	extra_overlay = "dalmatiantailspots"
 
 /datum/sprite_accessory/tail/fennec
 	name = "Fennec"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "fennectail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/elephant
-	name = "Elephant"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "elephanttail"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 
@@ -373,50 +317,19 @@
 	do_colouration = 1
 
 /datum/sprite_accessory/tail/racoon
-	name = "Racoon"
+	name = "Raccoon"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "racoontail"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
-
-/datum/sprite_accessory/tail/rabbit
-	name = "Rabbit"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "rabbittail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+	extra_overlay = "racoontailstripe"
 
 /datum/sprite_accessory/tail/kangaroo
 	name = "Kangaroo"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "kangarootail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/monkey
-	name = "Monkey (alt)"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "monkeytail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/drake
-	name = "Drake"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "draketail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/otie
-	name = "Cyote"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "otietail"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 
@@ -515,6 +428,7 @@
 	icon_state = "foxtail"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
+	extra_overlay = "foxtailtip"
 
 /datum/sprite_accessory/tail/snarby
 	name = "Snarby"
@@ -529,9 +443,8 @@
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "flareontail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
+	do_colouration = 0
+/* Temporary
 /datum/sprite_accessory/tail/lugia
 	name = "Lugia"
 	desc = ""
@@ -539,7 +452,7 @@
 	icon_state = "lugiatail"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
-
+*/
 /datum/sprite_accessory/tail/pig
 	name = "Pig"
 	desc = ""
@@ -553,16 +466,14 @@
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "goodratail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/porcupine
 	name = "Porcupine"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "porcupinetail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/zangoose
 	name = "Zangoose"
@@ -571,4 +482,10 @@
 	icon_state = "zangoosetail"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
-*/
+
+/datum/sprite_accessory/tail/seviper
+	name = "Seviper"
+	desc = ""
+	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
+	icon_state = "seviper"
+	do_colouration = 0
