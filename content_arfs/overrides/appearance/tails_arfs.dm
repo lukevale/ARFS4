@@ -1,18 +1,3 @@
-/datum/sprite_accessory/tail/eevee
-	name = "Eevee"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "eeveetail"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/gria
-	name = "Gria"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "griatail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
 
 /datum/sprite_accessory/tail/glaceons
 	name = "Glaceon"
@@ -20,7 +5,7 @@
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "glaceonstail"
 	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/glowfen
 	name = "Glowfen"
@@ -29,15 +14,7 @@
 	icon_state = "glowfentail"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
-
-/datum/sprite_accessory/tail/sog
-	name = "Lizard"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "sogtail_s"
-	ani_state = "sogtailw_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+	extra_overlay = "glowfentailface"
 
 /datum/sprite_accessory/tail/stok
 	name = "stoktail_s"
@@ -46,15 +23,15 @@
 	icon_state = "Stok"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
-
-/datum/sprite_accessory/tail/armalis
+/*
+/datum/sprite_accessory/tail/armalis  //No idea wtf this is.
 	name = "Mantis Tail"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "armalis_tail_s"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
-
+*/
 /datum/sprite_accessory/tail/chimp
 	name = "Chimp"
 	desc = ""
@@ -71,23 +48,6 @@
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 
-/datum/sprite_accessory/tail/taj_old
-	name = "Taj (Old)"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "tajtail_s"
-	ani_state = "tajtailw_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/vulp_old
-	name = "Vulp (Old)"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "vulptail_s"
-	ani_state = "vulptailw_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
 
 /datum/sprite_accessory/tail/wolpin
 	name = "Wolpin"
@@ -121,14 +81,6 @@
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 
-/datum/sprite_accessory/tail/elf
-	name = "Elf"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "elftail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
 /datum/sprite_accessory/tail/stegosaurus
 	name = "Stegosaurus"
 	desc = ""
@@ -136,12 +88,13 @@
 	icon_state = "stegotail_s"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
+	extra_overlay = "stegotailspike"
 
-/datum/sprite_accessory/tail/vulture
-	name = "Vulture"
+/datum/sprite_accessory/tail/bird
+	name = "Bird Tail"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "vulturetail_s"
+	icon_state = "birdtail"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 
@@ -152,7 +105,7 @@
 	icon_state = "capratail_s"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
-
+/*Commenting out for now.
 /datum/sprite_accessory/tail/ceratosaurus
 	name = "Ceratosaurus"
 	desc = ""
@@ -160,28 +113,12 @@
 	icon_state = "ceratotail_s"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
-
+*/
 /datum/sprite_accessory/tail/corgi
 	name = "Corgi"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "corgitail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/crocodile
-	name = "Crocodile"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "croctail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/hawk
-	name = "Hawk"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "hawktail_s"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 
@@ -201,22 +138,6 @@
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 
-/datum/sprite_accessory/tail/smilodon
-	name = "Smilodon"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "smilodontail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/stitch
-	name = "Stitch"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "stitchtail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
 /datum/sprite_accessory/tail/turtle
 	name = "Turtle"
 	desc = ""
@@ -224,6 +145,7 @@
 	icon_state = "turtletail_s"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
+	extra_overlay = "turtlesnail"
 
 /datum/sprite_accessory/tail/zebra
 	name = "Zebra"
@@ -232,6 +154,7 @@
 	icon_state = "zebratail_s"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
+	extra_overlay = "zebratailstripe"
 
 /datum/sprite_accessory/tail/snail
 	name = "Snail"
@@ -240,6 +163,7 @@
 	icon_state = "snailtail_s"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
+	extra_overlay = "snailshell"
 
 /datum/sprite_accessory/tail/sergal
 	name = "Segal (alt)"
@@ -257,29 +181,14 @@
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 
-/datum/sprite_accessory/tail/crow
-	name = "Crow"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "crowtail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
 
 /datum/sprite_accessory/tail/acaelius
-	name = "Acaelius"
+	name = "USB tail"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "acaelius_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+	do_colouration = 0
 
-/datum/sprite_accessory/tail/fluffdragon
-	name = "Fluff Dragon"
-	desc = ""
-	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
-	icon_state = "miria-fluffdragontail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
 
 /datum/sprite_accessory/tail/deathclaw
 	name = "Deathclaw"
@@ -294,17 +203,15 @@
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "flaffytail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
+	do_colouration = 0
 
 /datum/sprite_accessory/tail/rattata
 	name = "Rattata"
 	desc = ""
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "rattatatail_s"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
+	do_colouration = 0
+/* Soon
 /datum/sprite_accessory/tail/pikachu
 	name = "Pikachu"
 	desc = ""
@@ -664,3 +571,4 @@
 	icon_state = "zangoosetail"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
+*/
