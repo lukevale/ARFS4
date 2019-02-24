@@ -44,13 +44,13 @@
 
 //Turbolift areas
 /area/turbolift/endeavor/deckone
-	name = "Deck 1 - Medical, Research, Mining Dock, Telecommunications, Gateway"
+	name = "Deck 1 - Medical, Research, Mining Dock, Arrival Dock, Telecommunications, Gateway"
 /area/turbolift/endeavor/decktwo
 	name = "Deck 2 - Maintenance, Engineering, Life Support, VIP Lounge"
 /area/turbolift/endeavor/deckthree
 	name = "Deck 3 - Bar, Bridge, Cryogenics, Cafeteria, Hydroponics, Pool"
 /area/turbolift/endeavor/deckfour
-	name = "Deck 4 - Cargo Bay, Departures, Security, Excursion Dock"
+	name = "Deck 4 - Cargo Bay, Evacuation / Departure Dock, Security, Excursion Dock, VR Lounge"
 /area/turbolift/endeavor/deckfive
 	name = "Deck 5 - Dormitories, Holodeck, Laundry, Civilian Teleporter"
 

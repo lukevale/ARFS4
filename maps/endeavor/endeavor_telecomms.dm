@@ -23,6 +23,15 @@
 	listening_level = Z_LEVEL_ENDEAVOR_FIVE
 	autolinkers = list("end_5_relay")
 
+/obj/machinery/telecomms/relay/preset/endeavor/mining_high
+	id = "Asteroid Surface Relay"
+	listening_level = Z_LEVEL_MINING_HIGH
+	autolinkers = list("mining_high")
+//Might not use this one, i dunno
+/obj/machinery/telecomms/relay/preset/endeavor/mining_low
+	id = "Asteroid Interior Relay"
+	listening_level = Z_LEVEL_MINING_HIGH
+	autolinkers = list("mining_low")
 
 /obj/machinery/telecomms/hub/preset/endeavor
 	id = "Hub"
