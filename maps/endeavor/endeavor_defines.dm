@@ -22,7 +22,7 @@
 
 	zlevel_datum_type = /datum/map_z_level/endeavor
 
-//	lobby_icon = 'icons/misc/title_arf.dmi'
+	lobby_icon = 'maps/endeavor/title_arf.dmi'
 	lobby_screens = list("endeavor")
 	id_hud_icons = 'icons/mob/hud_jobs_vr.dmi'
 	station_name  = "ARFS Endeavor"
