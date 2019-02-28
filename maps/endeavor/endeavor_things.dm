@@ -275,13 +275,38 @@
 
 //Conveyor code sucks
 /obj/machinery/conveyor
-	var/reversed = FALSE	//Corner conveyors can only turn right for some reason
+	var/reversed = FALSE	//Corner conveyors can only turn right for some reason or im braindead and couldnt figure it out in the first 30 seconds and just wrote this instead
 /obj/machinery/conveyor/setmove()
 	if(operating != 0 && reversed)
-		operating = !operating
+		operating = operating*-1
 	if(operating == 1)
 		movedir = forwards
 	else if(operating == -1)
 		movedir = backwards
 	else operating = 0
 	update()
+
+
+//berry juice for fancy drinks
+/obj/machinery/chemical_dispenser/bar_alc/full
+	spawn_cartridges = list(
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/lemon_lime,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/sugar,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/orange,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/lime,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/sodawater,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/tonic,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/beer,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/kahlua,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/whiskey,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/wine,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/vodka,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/gin,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/rum,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/tequila,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/vermouth,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/cognac,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/ale,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/mead,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/berry
+		)

@@ -34,14 +34,14 @@
 	company_short = "ARF"
 	starsys_name  = "Odin"
 
-	shuttle_docked_message = "The automated crew transfer ferry has docked at the %station_name%. It will depart for the %dock_name% in approximately %ETD%."
-	shuttle_leaving_dock = "The automated crew transfer ferry has left the %dock_name%. Estimate %ETA% until the tram arrives at %dock_name%."
-	shuttle_called_message = "An automated crew transfer ferry is en route to the %dock_name%. It will arrive in approximately %ETA%"
+	shuttle_docked_message = "The automated crew transfer ferry has docked at the ARFS Endeavor. It will depart for the %dock_name% in approximately %ETD%."
+	shuttle_leaving_dock = "The automated crew transfer ferry has left the ARFS Endeavor. Estimate %ETA% until the tram arrives at the %dock_name%."
+	shuttle_called_message = "An automated crew transfer ferry is en route to the ARFS Endeavor. It will arrive in approximately %ETA%"
 	shuttle_recall_message = "The automated crew transfer has been cancelled."
-	emergency_shuttle_docked_message = "The evacuation ferry has arrived at the tram station. You have approximately %ETD% to board the ferry."
-	emergency_shuttle_leaving_dock = "The emergency ferry has left the station. Estimate %ETA% until the ferry arrives at %dock_name%."
-	emergency_shuttle_called_message = "An emergency evacuation has begun, and an off-schedule ferry has been called. It will arrive at the evacuation dock in approximately %ETA%."
-	emergency_shuttle_recall_message = "The evacuation ferry has been recalled."
+	emergency_shuttle_docked_message = "The emergency ferry has arrived at the ARFS Endeavor's dock on deck 4. You have approximately %ETD% to board the ferry."
+	emergency_shuttle_leaving_dock = "The emergency ferry has left the ARFS Endeavor. Estimate %ETA% until the ferry arrives at the %dock_name%."
+	emergency_shuttle_called_message = "An emergency evacuation has begun, and an off-schedule ferry has been called from the %dock_name%. It will arrive at the evacuation dock on deck 4 in approximately %ETA%."
+	emergency_shuttle_recall_message = "The emergency ferry has been recalled."
 
 /*
 	shuttle_docked_message = "The scheduled Orange Line tram to the %dock_name% has arrived. It will depart in approximately %ETD%."
