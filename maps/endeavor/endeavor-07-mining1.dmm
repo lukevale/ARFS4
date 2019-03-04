@@ -1,4 +1,4 @@
-"aa" = (/turf/unsimulated/mineral,/area/space)
+"aa" = (/turf/unsimulated/mineral/vacuum,/area/space)
 "ab" = (/turf/simulated/mineral/vacuum,/area/mine/unexplored/low)
 "ac" = (/turf/simulated/wall,/area/outpost/mining_main/main)
 "ad" = (/turf/simulated/floor/tiled/steel,/area/outpost/mining_main/main)
