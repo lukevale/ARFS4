@@ -76,3 +76,9 @@
 		mineral = ore_data[mineral_name]
 		UpdateMineral()
 	update_icon()
+
+//For the edges of mining to fix the caves filling with air
+/turf/unsimulated/mineral/vacuum
+	oxygen = 0
+	nitrogen = 0
+	temperature = T0C
