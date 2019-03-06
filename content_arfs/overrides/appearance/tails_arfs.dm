@@ -496,3 +496,11 @@
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "alolanvulpixtail"
 	do_colouration = 0
+
+/datum/sprite_accessory/tail/mega_absol
+	name = "mega absol tail (colorable)"
+	desc = ""
+	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
+	icon_state = "mega absol"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
