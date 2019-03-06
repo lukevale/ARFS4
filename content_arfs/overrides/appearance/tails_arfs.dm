@@ -489,3 +489,10 @@
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "seviper"
 	do_colouration = 0
+
+/datum/sprite_accessory/tail/alolanvulpix
+	name = "Alolan Vulpix"
+	desc = ""
+	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
+	icon_state = "alolanvulpixtail"
+	do_colouration = 0

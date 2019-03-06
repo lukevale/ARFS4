@@ -232,3 +232,9 @@
 	icon_state = "zangooseears"
 	do_colouration = 1
 	extra_overlay = "zangooseearscolor"
+
+/datum/sprite_accessory/ears/vulpix //Fixed
+	name = "Alolan Vulpix"
+	desc = ""
+	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
+	icon_state = "alolanvulpixears"
