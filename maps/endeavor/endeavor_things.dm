@@ -337,6 +337,7 @@
 	on_enter_occupant_message = "You board the next shuttle leaving and ride it back to the ARFS Phoenix."
 	on_store_visible_message_1 = "chimes as a shuttle leaves"
 	on_store_visible_message_2 = "for the ARFS Phoenix."
+	opacity = 1
 
 /obj/machinery/computer/cryopod/shuttle
 	name = "docking oversight console"
@@ -387,3 +388,9 @@
 				Likewise, no matter how sad the core seems, don't fucking hug it, you'll blow the field out and set the engine room on fire.
 				</body>
 			</html>"}
+
+/obj/machinery/computer/med_data
+    density = 1
+
+/obj/machinery/computer/med_data/laptop
+    density = 0
