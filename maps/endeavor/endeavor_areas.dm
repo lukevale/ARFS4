@@ -272,16 +272,17 @@ area/security/hallway
 /area/shuttle/excursion/space_moving
 	name = "\improper Excursion Shuttle - Space Moving"
 	base_turf = /turf/space/transit/north
-/*
+
 /area/shuttle/excursion/bluespace
 	name = "\improper Excursion Shuttle - Bluespace"
 	base_turf = /turf/space/bluespace
 
 /area/shuttle/excursion/sand_moving
 	name = "\improper Excursion Shuttle - Sand Transit"
-	base_turf = /turf/space/sandyscroll
+	base_turf = /turf/space/sandyscroll/southnorth
 
-/area/shuttle/excursion/virgo3b_sky
+/area/shuttle/excursion/virgo5_sky
 	name = "\improper Excursion Shuttle - Virgo3b Sky"
 	base_turf = /turf/simulated/sky
-*/
+
+

@@ -82,3 +82,58 @@
 	oxygen = 0
 	nitrogen = 0
 	temperature = T0C
+
+
+// Bluespace jump turf!
+/turf/space/bluespace
+	name = "bluespace"
+	icon_state = "bluespace"
+/turf/space/bluespace/initialize()
+	..()
+	icon_state = "bluespace"
+
+// Desert jump turf!
+/turf/space/sandyscroll
+	name = "sand transit"
+	icon = 'icons/turf/transit_vr.dmi'
+	icon_state = "desert_ns"
+/turf/space/sandyscroll/initialize()
+	..()
+	icon_state = "desert_ns"
+
+/turf/space/sandyscroll/southnorth
+	name = "sand transit"
+	icon = 'maps/endeavor/endeavor_turfs.dmi'
+	icon_state = "desert_sn"
+/turf/space/sandyscroll/initialize()
+	..()
+	icon_state = "desert_sn"
+
+//Sky stuff!
+// A simple turf to fake the appearance of flying.
+/turf/simulated/sky/odin5
+	color = "#FFBBBB"
+
+/turf/simulated/sky/odin5/initialize()
+	SSplanets.addTurf(src)
+	set_light(2, 2, "#FFBBBB")
+
+/turf/simulated/sky/odin5/north
+	dir = NORTH
+/turf/simulated/sky/odin5/south
+	dir = SOUTH
+/turf/simulated/sky/odin5/east
+	dir = EAST
+/turf/simulated/sky/odin5/west
+	dir = WEST
+
+/turf/simulated/sky/odin5/moving
+	icon_state = "sky_fast"
+/turf/simulated/sky/odin5/moving/north
+	dir = NORTH
+/turf/simulated/sky/odin5/moving/south
+	dir = SOUTH
+/turf/simulated/sky/odin5/moving/east
+	dir = EAST
+/turf/simulated/sky/odin5/moving/west
+	dir = WEST
