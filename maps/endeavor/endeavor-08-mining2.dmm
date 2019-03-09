@@ -9,7 +9,7 @@
 "ai" = (/obj/structure/shuttle/engine/heater{icon_state = "heater"; dir = 4},/turf/simulated/floor/plating/external,/area/outpost/mining_main/main)
 "aj" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion"; dir = 4},/turf/simulated/floor/plating/external,/area/outpost/mining_main/main)
 "ak" = (/turf/simulated/floor/plating/external,/area/shuttle/mining/outpost{base_turf = /turf/simulated/floor/plating/external})
-"al" = (/turf/simulated/mineral/vacuum/rich,/area/mine/unexplored/high)
+"al" = (/turf/simulated/mineral/vacuum,/area/mine/unexplored/high)
 "am" = (/obj/structure/table/reinforced,/obj/item/weapon/storage/toolbox/mechanical,/obj/item/clothing/head/welding,/obj/item/clothing/gloves/black,/turf/simulated/floor/tiled/steel_grid,/area/outpost/mining_main/main)
 "an" = (/turf/simulated/floor/plating/external,/area/mine/explored/high)
 "ao" = (/obj/structure/grille,/obj/structure/window/reinforced/full,/obj/machinery/door/firedoor/glass,/turf/simulated/floor/plating,/area/outpost/mining_main/main)
