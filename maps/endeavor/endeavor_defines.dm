@@ -9,7 +9,7 @@
 #define Z_LEVEL_MINING_HIGH				8
 #define Z_LEVEL_SHIPS					9
 #define Z_LEVEL_MISC					10
-#define Z_LEVEL_ODIN5A_BEACH				11
+#define Z_LEVEL_ODIN5A_BEACH			11
 #define Z_LEVEL_ODIN5A_CAVE				12
 
 
