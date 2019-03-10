@@ -17,7 +17,7 @@
 	return arg
 
 /proc/ext_python(var/script, var/args, var/scriptsprefix = 1)
-	return  // VOREStation Edit - Can't exploit shell if we never call shell!
+	//return  // ARFS Edit - Needed for Shodan checking
 	if(scriptsprefix)
 		script = "scripts/" + script
 
