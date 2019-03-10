@@ -1,12 +1,21 @@
 //Full tile windows
+/obj/structure/window/reinforced/full
+	fulltile = TRUE
+	icon = 'icons/obj/structures_vr.dmi'
+	icon_state = "fwindow"
+	dir = SOUTHWEST
+
 /obj/structure/window/reinforced/polarized/full
 	dir = SOUTHWEST
 	icon_state = "fwindow"
 	maxhealth = 80
+	fulltile = TRUE
+
 /obj/structure/window/phoronreinforced/full
 	dir = SOUTHWEST
 	maxhealth = 160
 	icon_state = "phoronwindow0"
+	fulltile = TRUE
 
 //Exterior hull looks different in the map editor
 /turf/simulated/wall/rshull

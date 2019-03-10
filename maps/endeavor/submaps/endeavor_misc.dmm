@@ -189,7 +189,7 @@
 "dG" = (/obj/machinery/light,/turf/simulated/shuttle/floor/white,/area/supply/dock)
 "dH" = (/obj/machinery/conveyor{dir = 4; id = "QMLoad2"},/turf/simulated/shuttle/floor/white,/area/supply/dock)
 "dI" = (/obj/machinery/door/airlock/glass_external{frequency = 1380; icon_state = "door_locked"; id_tag = "supply_shuttle_hatch"; locked = 1; name = "Shuttle Hatch"},/obj/machinery/conveyor{dir = 4; id = "QMLoad2"},/turf/simulated/shuttle/plating,/area/supply/dock)
-"dJ" = (/mob/living/simple_animal/hostile/mimic/crate,/turf/unsimulated/floor/steel,/area/centcom/suppy)
+"dJ" = (/mob/living/simple_mob/animal/space/mimic,/turf/unsimulated/floor/steel,/area/centcom/suppy)
 "dK" = (/obj/machinery/door/airlock/glass_external{frequency = 1380; icon_state = "door_locked"; id_tag = "supply_shuttle_hatch"; locked = 1; name = "Shuttle Hatch"},/obj/machinery/conveyor{dir = 8; id = "QMLoad"},/turf/simulated/shuttle/plating,/area/supply/dock)
 "dL" = (/obj/effect/floor_decal/industrial/loading{dir = 8},/turf/simulated/shuttle/floor/white,/area/supply/dock)
 "dM" = (/turf/unsimulated/wall,/area/virtual_reality/hub)

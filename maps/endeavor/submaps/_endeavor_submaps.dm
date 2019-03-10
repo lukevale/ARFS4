@@ -200,7 +200,7 @@
 	var/guard				//# will set the mobs to remain nearby their spawn point within this dist
 
 	//Internal use only
-	var/mob/living/simple_animal/my_mob
+	var/mob/living/simple_mob/my_mob
 	var/depleted = FALSE
 
 /obj/endeavor_away_spawner/initialize()
@@ -244,11 +244,11 @@
 				my_mob.max_tox = gaslist["phoron"] * 1.2
 				my_mob.max_n2 = gaslist["nitrogen"] * 1.2
 				my_mob.max_co2 = gaslist["carbon_dioxide"] * 1.2
-
+/* //VORESTATION AI TEMPORARY REMOVAL
 		if(guard)
 			my_mob.returns_home = TRUE
 			my_mob.wander_distance = guard
-
+*/
 		return
 	else
 		processing_objects -= src
@@ -267,7 +267,7 @@
 	prob_fall = 1
 	guard = 10 //Don't wander too far, to stay alive.
 	mobs_to_pick_from = list(
-		/mob/living/simple_animal/shadekin
+		/mob/living/simple_mob/shadekin
 	)
 
 // Underdark mob spawners
@@ -279,10 +279,10 @@
 	prob_fall = 50
 	guard = 20
 	mobs_to_pick_from = list(
-		/mob/living/simple_animal/hostile/jelly = 3,
-		/mob/living/simple_animal/hostile/giant_spider/hunter = 1,
-		/mob/living/simple_animal/hostile/giant_spider/phorogenic = 1,
-		/mob/living/simple_animal/hostile/giant_spider/lurker = 1,
+		/mob/living/simple_mob/hostile/jelly = 3,
+		/mob/living/simple_mob/animal/giant_spider/hunter = 1,
+		/mob/living/simple_mob/animal/giant_spider/phorogenic = 1,
+		/mob/living/simple_mob/animal/giant_spider/lurker = 1,
 	)
 
 /obj/endeavor_away_spawner/underdark_hard
@@ -293,9 +293,9 @@
 	prob_fall = 50
 	guard = 20
 	mobs_to_pick_from = list(
-		/mob/living/simple_animal/hostile/corrupthound = 1,
-		/mob/living/simple_animal/hostile/rat = 1,
-		/mob/living/simple_animal/hostile/mimic = 1
+		/mob/living/simple_mob/vore/corrupthound = 1,
+		/mob/living/simple_mob/vore/rat = 1,
+		/mob/living/simple_mob/animal/space/mimic = 1
 	)
 
 /obj/endeavor_away_spawner/underdark_boss
@@ -306,5 +306,5 @@
 	prob_fall = 100
 	guard = 70
 	mobs_to_pick_from = list(
-		/mob/living/simple_animal/hostile/dragon = 1
+		/mob/living/simple_mob/vore/dragon = 1
 	)

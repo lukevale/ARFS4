@@ -17,7 +17,7 @@
 	return arg
 
 /proc/ext_python(var/script, var/args, var/scriptsprefix = 1)
-	//return  // ARFS edit - We want shell and like to live dangerously
+	return  // VOREStation Edit - Can't exploit shell if we never call shell!
 	if(scriptsprefix)
 		script = "scripts/" + script
 

@@ -105,8 +105,6 @@
 		del(src)
 		return
 
-	check_shodan() //ARFS Edit - Check shodan for VPNs and Proxy servers
-		
 	src << "<font color='red'>If the title screen is black, resources are still downloading. Please be patient until the title screen appears.</font>"
 
 
