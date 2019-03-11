@@ -95,6 +95,12 @@ character_name: Sebastian Aji
 item_path: /obj/item/weapon/storage/box/fluff/sebastian_aji
 }
 
+}
+ckey: andyman105
+character_name: Dameon Owen, Amber Owen, Lilith Owen
+item_path: /obj/item/device/communicator/andy
+}
+
 # ######## B CKEYS
 {
 ckey: benemuel
@@ -187,6 +193,11 @@ item_path: /obj/item/weapon/disk/limb/eggnerdltd
 ckey: cross_exonar
 character_name: Sari-E
 item_path: /obj/item/weapon/disk/limb/eggnerdltd
+}
+
+{
+ckey: cebutris
+item_patch: /obj/item/weapon/soap/cebusoap
 }
 
 # ######## D CKEYS
@@ -293,6 +304,20 @@ item_path: /obj/item/clothing/accessory/medal/bronze_heart
 ckey:Gowst
 character_name: Eldi Moljir
 item_path: /obj/item/weapon/implanter/reagent_generator/eldi
+}
+
+{
+ckey:gozulio
+character_name: Jessie Glitterpaws
+item_path: /obj/item/clothing/suit/radiation/gozu
+req_access: 10
+}
+
+{
+ckey:gozulio
+character_name: Jessie Glitterpaws
+item_path: /obj/item/clothing/head/radiation/gozu
+req_access: 10
 }
 
 # ######## H CKEYS
