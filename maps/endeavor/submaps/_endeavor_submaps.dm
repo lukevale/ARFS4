@@ -2,10 +2,12 @@
 // This is so Travis can validate PoIs, and ensure future changes don't break PoIs, as PoIs are loaded at runtime and the compiler can't catch errors.
 
 /obj/effect/step_trigger/zlevel_fall
-	var/static/target_z
+	var/target_z
 
 //////////////////////////////////////////////////////////////////////////////
 /// Static Load
+#include "endeavor_ships.dmm"
+#include "endeavor_misc.dmm"
 /datum/map_template/endeavor_lateload/endeavor_misc
 	name = "Endeavor - Misc"
 	desc = "Misc areas, like some transit areas, holodecks, merc area."
@@ -27,42 +29,21 @@
 /datum/map_z_level/endeavor_lateload/ships
 	name = "Ships"
 	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED
-/*
-#include "underdark_pois/_templates.dm"
-/datum/map_template/endeavor_lateload/endeavor_underdark
-	name = "Endeavor - Underdark"
-	desc = "Mining, but harder."
-	mappath = 'endeavor_underdark.dmm'
 
-	associated_map_datum = /datum/map_z_level/endeavor_lateload/underdark
-
-/datum/map_z_level/endeavor_lateload/underdark
-	name = "Underdark"
-	flags = MAP_LEVEL_CONTACT|MAP_LEVEL_PLAYER
-
-/datum/map_template/endeavor_lateload/endeavor_underdark/on_map_loaded(z)
-	. = ..()
-	seed_submaps(list(z), 100, /area/mine/unexplored/underdark, /datum/map_template/underdark)
-	new /datum/random_map/automata/cave_system/no_cracks(null, 1, 1, z, world.maxx, world.maxy) // Create the mining Z-level.
-	new /datum/random_map/noise/ore(null, 1, 1, z, 64, 64)         // Create the mining ore distribution map.
-*/
 //////////////////////////////////////////////////////////////////////////////
 
-/*
-/// Away Missions
-#if AWAY_MISSION_TEST
-#include "beach/beach.dmm"
-#include "beach/cave.dmm"
-#include "alienship/alienship.dmm"
-#include "aerostat/aerostat.dmm"
-#include "aerostat/surface.dmm"
-#endif
 
-#include "beach/_beach.dm"
+/// Away Missions
+#include "odin5a-desert/odin5a.dm"
+
+#include "odin5a-desert/odin5a-beach.dmm"//Things are weird if they aren't compiled with the rest of the maps. Look into this later
+#include "odin5a-desert/odin5a-cave.dmm"
+
+//Closest moon to the Odin 5 gas giant. Desert world torn by tidal forces and covered in raging oceans, widespread deserts, and deadly volcanoes
 /datum/map_template/endeavor_lateload/away_beach
 	name = "Desert Planet - Z1 Beach"
 	desc = "The beach away mission."
-	mappath = 'beach/beach.dmm'
+	mappath = 'odin5a-desert/odin5a-beach.dmm'
 	associated_map_datum = /datum/map_z_level/endeavor_lateload/away_beach
 
 /datum/map_z_level/endeavor_lateload/away_beach
@@ -71,16 +52,13 @@
 /datum/map_template/endeavor_lateload/away_beach_cave
 	name = "Desert Planet - Z2 Cave"
 	desc = "The beach away mission's cave."
-	mappath = 'beach/cave.dmm'
+	mappath = 'odin5a-desert/odin5a-cave.dmm'
 	associated_map_datum = /datum/map_z_level/endeavor_lateload/away_beach_cave
 
 /datum/map_z_level/endeavor_lateload/away_beach_cave
 	name = "Away Mission - Desert Cave"
 
-/obj/effect/step_trigger/zlevel_fall/beach
-	var/static/target_z
-
-
+/*
 #include "alienship/_alienship.dm"
 /datum/map_template/endeavor_lateload/away_alienship
 	name = "Alien Ship - Z1 Ship"
@@ -222,7 +200,7 @@
 	var/guard				//# will set the mobs to remain nearby their spawn point within this dist
 
 	//Internal use only
-	var/mob/living/simple_animal/my_mob
+	var/mob/living/simple_mob/my_mob
 	var/depleted = FALSE
 
 /obj/endeavor_away_spawner/initialize()
@@ -266,11 +244,11 @@
 				my_mob.max_tox = gaslist["phoron"] * 1.2
 				my_mob.max_n2 = gaslist["nitrogen"] * 1.2
 				my_mob.max_co2 = gaslist["carbon_dioxide"] * 1.2
-
+/* //VORESTATION AI TEMPORARY REMOVAL
 		if(guard)
 			my_mob.returns_home = TRUE
 			my_mob.wander_distance = guard
-
+*/
 		return
 	else
 		processing_objects -= src
@@ -289,5 +267,44 @@
 	prob_fall = 1
 	guard = 10 //Don't wander too far, to stay alive.
 	mobs_to_pick_from = list(
-		/mob/living/simple_animal/shadekin
+		/mob/living/simple_mob/shadekin
+	)
+
+// Underdark mob spawners
+/obj/endeavor_away_spawner/underdark_normal
+	name = "Underdark Normal Spawner"
+	faction = "underdark"
+	atmos_comp = TRUE
+	prob_spawn = 100
+	prob_fall = 50
+	guard = 20
+	mobs_to_pick_from = list(
+		/mob/living/simple_mob/hostile/jelly = 3,
+		/mob/living/simple_mob/animal/giant_spider/hunter = 1,
+		/mob/living/simple_mob/animal/giant_spider/phorogenic = 1,
+		/mob/living/simple_mob/animal/giant_spider/lurker = 1,
+	)
+
+/obj/endeavor_away_spawner/underdark_hard
+	name = "Underdark Hard Spawner"
+	faction = "underdark"
+	atmos_comp = TRUE
+	prob_spawn = 100
+	prob_fall = 50
+	guard = 20
+	mobs_to_pick_from = list(
+		/mob/living/simple_mob/vore/corrupthound = 1,
+		/mob/living/simple_mob/vore/rat = 1,
+		/mob/living/simple_mob/animal/space/mimic = 1
+	)
+
+/obj/endeavor_away_spawner/underdark_boss
+	name = "Underdark Boss Spawner"
+	faction = "underdark"
+	atmos_comp = TRUE
+	prob_spawn = 100
+	prob_fall = 100
+	guard = 70
+	mobs_to_pick_from = list(
+		/mob/living/simple_mob/vore/dragon = 1
 	)

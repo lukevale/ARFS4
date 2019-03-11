@@ -8,7 +8,7 @@
 	weight = 137					// Weight for mobs for weightgain system
 	weight_gain = 1 				// How fast you gain weight
 	weight_loss = 0.5 				// How fast you lose weight
-	egg_type = "egg" 				// Default egg type.
+	vore_egg_type = "egg" 				// Default egg type.
 	feral = 0 						// How feral the mob is, if at all. Does nothing for non xenochimera at the moment.
 	reviving = 0					// Only used for creatures that have the xenochimera regen ability, so far.
 	metabolism = 0.0015

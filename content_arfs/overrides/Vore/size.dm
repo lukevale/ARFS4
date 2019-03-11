@@ -1,7 +1,7 @@
 /datum/category_item/player_setup_item/vore/size/OnTopic(var/href, var/list/href_list, var/mob/user)
 	if(href_list["size_multiplier"])
 		var/new_size = input(user, "Choose your character's size, ranging from 35% to 200%", "Set Size") as num|null //Mithra EDIT- restricts character size to 35-200, from 25-200
-		if (!IsInRange(new_size,35,200)) //Normal size retriction is 25 - 200
+		if (!ISINRANGE(new_size,35,200)) //Normal size retriction is 25 - 200
 			pref.size_multiplier = 1
 			user << "<span class='notice'>Invalid size.</span>"
 			return TOPIC_REFRESH_UPDATE_PREVIEW

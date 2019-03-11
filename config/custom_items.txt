@@ -97,7 +97,7 @@ item_path: /obj/item/weapon/storage/box/fluff/sebastian_aji
 
 }
 ckey: andyman105
-character_name: Dameon Owen, Amber Owen
+character_name: Dameon Owen, Amber Owen, Lilith Owen
 item_path: /obj/item/device/communicator/andy
 }
 

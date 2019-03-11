@@ -1,12 +1,21 @@
 //Full tile windows
+/obj/structure/window/reinforced/full
+	fulltile = TRUE
+	icon = 'icons/obj/structures_vr.dmi'
+	icon_state = "fwindow"
+	dir = SOUTHWEST
+
 /obj/structure/window/reinforced/polarized/full
 	dir = SOUTHWEST
 	icon_state = "fwindow"
 	maxhealth = 80
+	fulltile = TRUE
+
 /obj/structure/window/phoronreinforced/full
 	dir = SOUTHWEST
 	maxhealth = 160
 	icon_state = "phoronwindow0"
+	fulltile = TRUE
 
 //Exterior hull looks different in the map editor
 /turf/simulated/wall/rshull
@@ -394,3 +403,28 @@
 
 /obj/machinery/computer/med_data/laptop
     density = 0
+
+/obj/effect/mist/mapped
+	name = "mist"
+	icon = 'content_arfs/icons/misc/effects.dmi'
+	icon_state = "mist"
+/obj/effect/mist/mapped/moving
+	icon_state = "mist_moving"
+
+
+/obj/random/single/xeno_egg_25
+	name = "xenomorph egg 25% chance"
+	spawn_nothing_percentage = 75
+	spawn_object = /obj/effect/alien/egg
+/obj/random/single/xeno_egg_50
+	name = "xenomorph egg 50% chance"
+	spawn_nothing_percentage = 50
+	spawn_object = /obj/effect/alien/egg
+/obj/random/single/xeno_egg_75
+	name = "xenomorph egg 75% chance"
+	spawn_nothing_percentage = 25
+	spawn_object = /obj/effect/alien/egg
+/obj/random/single/xeno_egg_100
+	name = "xenomorph egg 100% chance"
+	spawn_nothing_percentage = 0
+	spawn_object = /obj/effect/alien/egg
