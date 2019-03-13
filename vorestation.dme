@@ -3026,6 +3026,7 @@
 #include "content_arfs\code\objects\software\nifdisks.dm"
 #include "content_arfs\code\objects\software\nifpackages.dm"
 #include "content_arfs\code\objects\weapons\kinky.dm"
+#include "content_arfs\overrides\objects.dm"
 #include "content_arfs\overrides\species_overrides.dm"
 #include "content_arfs\overrides\verbs.dm"
 #include "content_arfs\overrides\antagonist\traitor.dm"
