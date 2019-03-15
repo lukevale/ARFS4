@@ -3020,6 +3020,7 @@
 #include "content_arfs\code\donater\misc.dm"
 #include "content_arfs\code\donater\races.dm"
 #include "content_arfs\code\donater\suits.dm"
+#include "content_arfs\code\donater\ties.dm"
 #include "content_arfs\code\loadout\loadout_general.dm"
 #include "content_arfs\code\machinery\vending.dm"
 #include "content_arfs\code\objects\balls.dm"
