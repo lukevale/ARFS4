@@ -104,7 +104,7 @@ item_path: /obj/item/device/communicator/andy
 {
 ckey: andyman105
 character_name: Dameon Owen
-item_path: /obj/item/clothing/accessory/watch/andy
+item_path: /obj/item/device/gps/owen
 }
 
 {
@@ -116,7 +116,7 @@ item_path: /obj/item/device/communicator/andy
 {
 ckey: andyman105
 character_name: Amber Owen
-item_path: /obj/item/clothing/accessory/watch/andy
+item_path: /obj/item/device/gps/owen
 }
 
 {
@@ -128,7 +128,7 @@ item_path: /obj/item/device/communicator/andy
 {
 ckey: andyman105
 character_name: Lilith Owen
-item_path: /obj/item/clothing/accessory/watch/andy
+item_path: /obj/item/device/gps/owen
 }
 
 # ######## B CKEYS
