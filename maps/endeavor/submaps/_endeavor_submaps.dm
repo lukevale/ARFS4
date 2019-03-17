@@ -8,24 +8,25 @@
 /// Static Load
 #include "endeavor_ships.dmm"
 #include "endeavor_misc.dmm"
+/*
 /datum/map_template/endeavor_lateload/endeavor_misc
 	name = "Endeavor - Misc"
 	desc = "Misc areas, like some transit areas, holodecks, merc area."
 	mappath = 'endeavor_misc.dmm'
 
 	associated_map_datum = /datum/map_z_level/endeavor_lateload/ships
-
+*/
 /datum/map_z_level/endeavor_lateload/misc
 	name = "Misc"
 	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED
-
+/*
 /datum/map_template/endeavor_lateload/Endeavor_ships
 	name = "Endeavor - Ships"
 	desc = "Ship transit map and whatnot."
 	mappath = 'endeavor_ships.dmm'
 
 	associated_map_datum = /datum/map_z_level/endeavor_lateload/ships
-
+*/
 /datum/map_z_level/endeavor_lateload/ships
 	name = "Ships"
 	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED
@@ -40,23 +41,26 @@
 #include "odin5a-desert/odin5a-cave.dmm"
 
 //Closest moon to the Odin 5 gas giant. Desert world torn by tidal forces and covered in raging oceans, widespread deserts, and deadly volcanoes
+/*don't double load
 /datum/map_template/endeavor_lateload/away_beach
 	name = "Desert Planet - Z1 Beach"
 	desc = "The beach away mission."
 	mappath = 'odin5a-desert/odin5a-beach.dmm'
 	associated_map_datum = /datum/map_z_level/endeavor_lateload/away_beach
-
+*/
 /datum/map_z_level/endeavor_lateload/away_beach
 	name = "Away Mission - Desert Beach"
-
+	z = Z_LEVEL_ODIN5A_BEACH
+/*don't double load
 /datum/map_template/endeavor_lateload/away_beach_cave
 	name = "Desert Planet - Z2 Cave"
 	desc = "The beach away mission's cave."
 	mappath = 'odin5a-desert/odin5a-cave.dmm'
 	associated_map_datum = /datum/map_z_level/endeavor_lateload/away_beach_cave
-
+*/
 /datum/map_z_level/endeavor_lateload/away_beach_cave
 	name = "Away Mission - Desert Cave"
+	z = Z_LEVEL_ODIN5A_CAVE
 
 /*
 #include "alienship/_alienship.dm"
