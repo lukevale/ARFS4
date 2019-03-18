@@ -150,14 +150,15 @@
 
 
 /datum/map_z_level/endeavor/mining
-	name = "Central Command"
-	flags = MAP_LEVEL_CONTACT|MAP_LEVEL_PLAYER|MAP_LEVEL_SEALED
+	name = "Asteroid"
+	flags = MAP_LEVEL_STATION|MAP_LEVEL_CONTACT|MAP_LEVEL_PLAYER|MAP_LEVEL_SEALED
 	transit_chance = 0
 
 /datum/map_z_level/endeavor/mining/low
 	name = "Asteroid Interior"
 	z = Z_LEVEL_MINING_LOW
 	base_turf = /turf/simulated/mineral/floor/vacuum
+	flags = MAP_LEVEL_CONTACT|MAP_LEVEL_PLAYER|MAP_LEVEL_SEALED //Radios can't breach that much rock
 
 /datum/map_z_level/endeavor/mining/high
 	name = "Asteroid Surface"
