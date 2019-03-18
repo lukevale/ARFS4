@@ -158,6 +158,10 @@
 /area/shuttle/mining
 	name = "\improper Mining Shuttle"
 
+//Research Shuttle
+/area/shuttle/research
+	name = "\improper Research Shuttle"
+
 //Outside mining areas
 /area/mine/explored/high
 	name = "Asteroid Surface"
