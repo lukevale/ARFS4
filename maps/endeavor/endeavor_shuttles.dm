@@ -36,6 +36,18 @@
 	flags = SHUTTLE_FLAGS_PROCESS|SHUTTLE_FLAGS_SUPPLY
 
 
+//Research
+/datum/shuttle/ferry/research
+	name = "Research"
+	warmup_time = 10
+	area_offsite = /area/shuttle/research/outpost
+	area_station = /area/shuttle/research/station
+	docking_controller_tag = "research_shuttle"
+	dock_target_station = "research_dock"
+	dock_target_offsite = "research_outpost_dock"
+
+/obj/machinery/computer/shuttle_control/mining
+	name = "research shuttle control console"
 
 ////////////////////////////////////////
 //////// Excursion Shuttle /////////////

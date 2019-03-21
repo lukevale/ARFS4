@@ -428,3 +428,8 @@
 	name = "xenomorph egg 100% chance"
 	spawn_nothing_percentage = 0
 	spawn_object = /obj/effect/alien/egg
+
+/obj/machinery/door/Bumped(atom/AM)
+	if(istype(AM, /mob/living/simple_mob/animal/passive/mouse))//Mice stay in maintenance unless let out.
+		return
+	. = ..()
