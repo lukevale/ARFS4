@@ -69,3 +69,13 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "monarch_pattern"
+
+/datum/sprite_accessory/wing/robodragon
+	name = "Robo dragon wing"
+	desc = ""
+	icon_state = "Drago_wing"
+	icon = 'content_arfs/icons/mob/player/wings_arfs.dmi'
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+
