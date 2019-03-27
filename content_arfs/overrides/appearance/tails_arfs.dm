@@ -504,3 +504,12 @@
 	icon_state = "mega absol"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/tail/robo_dragon
+	name = "robo dragon tail (colorable)"
+	desc = ""
+	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
+	icon_state = "robo_dragon"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "robodragonalt"
