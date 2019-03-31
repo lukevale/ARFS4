@@ -248,6 +248,7 @@
 	icon = 'content_arfs/icons/mob/player/tails_arfs.dmi'
 	icon_state = "skunktail_s"
 	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "skunktailstripealt"
 /* Just for now, same as Absol ears.
 /datum/sprite_accessory/tail/absol
