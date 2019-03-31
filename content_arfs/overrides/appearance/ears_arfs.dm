@@ -232,3 +232,16 @@
 	icon_state = "zangooseears"
 	do_colouration = 1
 	extra_overlay = "zangooseearscolor"
+
+/datum/sprite_accessory/ears/alolanvulpix //Fixed
+	name = "Alolan Vulpix"
+	desc = ""
+	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
+	icon_state = "alolanvulpixears"
+
+/datum/sprite_accessory/ears/mega_absol
+	name = "mega absol blades (colorable)"
+	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
+	icon_state = "mega absol"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY

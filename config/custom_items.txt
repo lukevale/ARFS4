@@ -95,10 +95,40 @@ character_name: Sebastian Aji
 item_path: /obj/item/weapon/storage/box/fluff/sebastian_aji
 }
 
-}
+{
 ckey: andyman105
-character_name: Dameon Owen, Amber Owen
+character_name: Dameon Owen
 item_path: /obj/item/device/communicator/andy
+}
+
+{
+ckey: andyman105
+character_name: Dameon Owen
+item_path: /obj/item/commcard/owen
+}
+
+{
+ckey: andyman105
+character_name: Amber Owen
+item_path: /obj/item/device/communicator/andy
+}
+
+{
+ckey: andyman105
+character_name: Amber Owen
+item_path: /obj/item/commcard/owen
+}
+
+{
+ckey: andyman105
+character_name: Lilith Owen
+item_path: /obj/item/device/communicator/andy
+}
+
+{
+ckey: andyman105
+character_name: Lilith Owen
+item_path: /obj/item/commcard/owen
 }
 
 # ######## B CKEYS

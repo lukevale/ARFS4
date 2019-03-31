@@ -1,12 +1,21 @@
 //Full tile windows
+/obj/structure/window/reinforced/full
+	fulltile = TRUE
+	icon = 'icons/obj/structures_vr.dmi'
+	icon_state = "fwindow"
+	dir = SOUTHWEST
+
 /obj/structure/window/reinforced/polarized/full
 	dir = SOUTHWEST
 	icon_state = "fwindow"
 	maxhealth = 80
+	fulltile = TRUE
+
 /obj/structure/window/phoronreinforced/full
 	dir = SOUTHWEST
 	maxhealth = 160
 	icon_state = "phoronwindow0"
+	fulltile = TRUE
 
 //Exterior hull looks different in the map editor
 /turf/simulated/wall/rshull
@@ -132,6 +141,19 @@
 	desc = "A silver sign which reads 'DECK V'."
 	name = "DECK V"
 	icon_state = "deck5"
+
+/obj/structure/sign/stairsdown
+	icon = 'maps/endeavor/endeavor_decals.dmi'
+	desc = "A silver sign letting you know that this staircase goes down."
+	name = "Stairs Go Down"
+	icon_state = "stairs_down"
+
+/obj/structure/sign/stairsup
+	icon = 'maps/endeavor/endeavor_decals.dmi'
+	desc = "A silver sign letting you know that this staircase goes up."
+	name = "Stairs Go up"
+	icon_state = "stairs_up"
+
 
 //Xenobiology cameras
 /obj/machinery/camera/network/xenobiology
@@ -310,3 +332,104 @@
 			/obj/item/weapon/reagent_containers/chem_disp_cartridge/mead,
 			/obj/item/weapon/reagent_containers/chem_disp_cartridge/berry
 		)
+
+//arrival dock cryopod
+/obj/machinery/cryopod/robot/door/shuttle
+	name = "Dock One"
+	desc = "The dock where shuttles move to and from the ARFS Phoenix where the long-range shuttles and teleporters are located."
+	icon = 'icons/obj/doors/Doorext.dmi'
+	icon_state = "door_locked"
+	base_icon_state = "door_locked"
+	occupied_icon_state = "door_deny"
+	on_store_message = "has departed for the ARFS Phoenix."
+	on_store_name = "Dock One Oversight"
+	on_enter_occupant_message = "You board the next shuttle leaving and ride it back to the ARFS Phoenix."
+	on_store_visible_message_1 = "chimes as a shuttle leaves"
+	on_store_visible_message_2 = "for the ARFS Phoenix."
+	opacity = 1
+
+/obj/machinery/computer/cryopod/shuttle
+	name = "docking oversight console"
+	desc = "An interface between visitors and the docking oversight systems tasked with keeping track of all visitors who enter or exit from the docks."
+	circuit = "/obj/item/weapon/circuitboard/robotstoragecontrol"
+
+	storage_type = "visitors"
+	storage_name = "Travel Oversight Control"
+	allow_items = 1
+
+//Rust manual
+/obj/item/weapon/book/manual/rust_engine/New()
+	..()
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+				<br><br>
+				<ol>
+				<li>If the engine's SMES (The one closer to the engine room itself) is low on power: Put phoron in pacman generator, wrench it onto the blue wire knot beneath it, and turn it on at power 2. Running it too hot can cause an explosion, be wary.</li>
+				<li>Turn the input on the core ship SMES (The one further from the engine itself) to 1000 kW and the output to just below that (~900-990 kW recommended).</li>
+				<li>Turn the engine SMES input to ~150kW and the output to ~140kW. Exact numbers can vary but this is almost always enough.</li>
+				<li>Turn the high power gas pump on the coolant loop (blue/green line) to full (below the TEGs).</li>
+				<li>Open the gas storage room and then wrench a phoron canister into the coolant loops (blue/green line) input connector and a CO2 canister into the hot loop (orange/red line). Turn both input pumps to full power. Repeat until you've filled both loops with three canisters of their respective gasses. (Leaving three left in the gas storage room in case you mess up later.)</li>
+				<li>Enter the engine control room and take three deuterium fuel rods from the crate. Take them back into the engine room and slot one into each fuel injector on the left side of the engine.</li>
+				<li>Back in the control room, access the R-UST Mk. 8 core control console and access the device tagged "engine". Set the field power density to 501 and bring the field online. Go into the engine room or use the camera console to confirm the field is online and its diameter fills the chamber completely.</li>
+				<li>Don a full radiation suit or equivalent protection before continuing. Equip an activated geiger counter in your pocket as well and drop the radiation shutters in the SMES room.</li>
+				<li>Access the Fusion Fuel Control Console and begin injecting deuterium fuel from one of the injectors.</li>
+				<li>Access the Gyrotron Remote Control Console and turn on a couple of them. They should say "emitting" when they're on.</li>
+				<li>When the plasma temperature in the field reaches ~2000K fusion should commence which you can confirm with your geiger counter. At this point you should turn off the gyrotrons if you're using only deuterium fuel as recommended, otherwise leave them on so the field stability doesn't decrease. The heat from the deuterium fusion will keep the heat high enough to self-sustain itself so long as the fuel rod doesn't deplete.</li>
+				<li>After turning off the gyrotrons, press the two blast-door controllers on the left side of the control room to drop the radiation shield blast doors around the fusion chamber and in front of the monitoring room. DO NOT PRESS THE ENGINE VENTILLATION BUTTON. The fuel injectors CAN inject through the blast shielding.</li>
+				<li>If you've done it right, no radiation should be leaking through into the monitoring room or anywhere else in engineering. Head into the SMES room and double check the input/output on the SMES's to ensure it's sustainable and that power is being generated. This setup easily exceeds 2MW of output, which is twice the stock input on the core SMES.</li>
+				<li>A fuel rod lasts roughly 8 hours. When a fuel rod runs out you can just activate one of the other two fuel injectors you filled earlier or bring another fuel rod in there and swap it with the empty one. If you're the only engineer aboard and you need to head off-ship, a good practice is to insert a fresh fuel rod before leaving so the ship's powered for at least 8 hours without you. Plenty of time for another technician to arrive.</li>
+				</ol>
+				<br>
+				<b>NOTES FOR NEWBIES</b>
+				<br>
+				Anything touching the field will mess with its stability and eventually cause it to rupture. Rupturing is bad. Use the gyrotron to keep instability down if you're running the engine on unstable fuel (tritium, etc).
+				<br><br>
+				Likewise, no matter how sad the core seems, don't fucking hug it, you'll blow the field out and set the engine room on fire.
+				</body>
+			</html>"}
+
+/obj/machinery/computer/med_data
+    density = 1
+
+/obj/machinery/computer/med_data/laptop
+    density = 0
+
+/obj/effect/mist/mapped
+	name = "mist"
+	icon = 'content_arfs/icons/misc/effects.dmi'
+	icon_state = "mist"
+/obj/effect/mist/mapped/moving
+	icon_state = "mist_moving"
+
+
+/obj/random/single/xeno_egg_25
+	name = "xenomorph egg 25% chance"
+	spawn_nothing_percentage = 75
+	spawn_object = /obj/effect/alien/egg
+/obj/random/single/xeno_egg_50
+	name = "xenomorph egg 50% chance"
+	spawn_nothing_percentage = 50
+	spawn_object = /obj/effect/alien/egg
+/obj/random/single/xeno_egg_75
+	name = "xenomorph egg 75% chance"
+	spawn_nothing_percentage = 25
+	spawn_object = /obj/effect/alien/egg
+/obj/random/single/xeno_egg_100
+	name = "xenomorph egg 100% chance"
+	spawn_nothing_percentage = 0
+	spawn_object = /obj/effect/alien/egg
+
+/obj/machinery/door/Bumped(atom/AM)
+	if(istype(AM, /mob/living/simple_mob/animal/passive/mouse))//Mice stay in maintenance unless let out.
+		return
+	. = ..()

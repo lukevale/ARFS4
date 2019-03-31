@@ -4,11 +4,13 @@
 	dir = 5
 	icon_state = "fwindow"
 	maxhealth = 60
+	fulltile = TRUE
 
 /obj/structure/window/reinforced/polarized/full
 	dir = 5
 	icon_state = "fwindow"
 	maxhealth = 60
+	fulltile = TRUE
 
 
 //
