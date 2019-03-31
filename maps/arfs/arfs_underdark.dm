@@ -57,7 +57,7 @@
 			var/datum/gas_mixture/env = T.return_air()
 			if(env)
 				my_mob.minbodytemp = 0
-				my_mob.maxbodytemp = 300
+				my_mob.maxbodytemp = 400
 
 				//var/list/gaslist = env.gas
 				my_mob.min_oxy = 0

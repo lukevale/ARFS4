@@ -138,4 +138,3 @@
 /datum/map_z_level/arfs/mine/bottom
 	z = Z_LEVEL_MINING_DANGER_ARFS
 	name = "Asteroid Underdark"
-	transit_chance = 5
