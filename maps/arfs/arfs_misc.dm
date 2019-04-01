@@ -108,3 +108,8 @@
 		var/datum/map_z_level/Z = using_map.zlevels[z_num]
 		if(Z.name == "Asteroid Topside")
 			teleport_z = Z.z
+
+
+//Landmark Definitions
+/obj/effect/landmark/map_data/arfs
+	height = 2

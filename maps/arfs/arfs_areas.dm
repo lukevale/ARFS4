@@ -111,6 +111,32 @@
 	name = "Game Room"
 	icon_state = "amaint"
 
+//Underbelly Maintenance
+
+/area/maintenance/guts
+	name = "Underbelly Maintenance"
+	icon_state = "amaint"
+/area/maintenance/guts/stairs
+	name = "Underbelly Stairs"
+/area/maintenance/guts/SMES
+	name = "Underbelly SMES"
+/area/maintenance/guts/medical
+	name = "Maintenance Medical"
+/area/maintenance/guts/science
+	name = "Maintenance Science"
+/area/maintenance/guts/north
+	name = "Guts Northern Hallways"
+/area/maintenance/guts/south
+	name = "Guts Southern Hallways"
+/area/maintenance/guts/dorms/
+	name = "Maintenance Dorms"
+/area/maintenance/guts/dorms/roomone
+	name = "Maintenance Dorm 1"
+/area/maintenance/guts/dorms/roomtwo
+	name = "Maintenance Dorm 2"
+/area/maintenance/guts/dorms/roomthree
+	name = "Maintenance Dorm 3"
+
 //underdark
 /area/outpost/mining_main/lower_outpost
 	name = "Lower Asteroid Outpost"
