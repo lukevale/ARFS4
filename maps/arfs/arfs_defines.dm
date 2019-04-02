@@ -1,9 +1,14 @@
-#define Z_LEVEL_MAIN_ARFS					1
-#define Z_LEVEL_CENTCOM_ARFS				2
-#define Z_LEVEL_EMPTY_ARFS					3
-#define Z_LEVEL_ABANDONED_ASTEROID_ARFS		4
-#define Z_LEVEL_MINING_ARFS					5
-#define Z_LEVEL_MINING_DANGER_ARFS			6
+#define Z_LEVEL_ARFS_ONE					1
+#define Z_LEVEL_ARFS_TWO					2
+#define Z_LEVEL_CENTCOM_ARFS				3
+#define Z_LEVEL_EMPTY_ARFS					4
+#define Z_LEVEL_ABANDONED_ASTEROID_ARFS		5
+#define Z_LEVEL_MINING_ARFS					6
+#define Z_LEVEL_MINING_DANGER_ARFS			7
+
+#define Z_LEVEL_BOTTOM_DECK				Z_LEVEL_ARFS_ONE
+#define Z_LEVEL_TOP_DECK				Z_LEVEL_ARFS_TWO
+
 
 
 /datum/map/arfs
@@ -100,13 +105,27 @@
 		return list(
 			Z_LEVEL_MINING_ARFS,
 			Z_LEVEL_MINING_DANGER_ARFS)
+	else if (srcz >= Z_LEVEL_BOTTOM_DECK && srcz <= Z_LEVEL_TOP_DECK)
+		return list(
+			Z_LEVEL_ARFS_ONE,
+			Z_LEVEL_ARFS_TWO)
 	else
 		return ..()
 
-/datum/map_z_level/arfs/station
-	z = Z_LEVEL_MAIN_ARFS
+/datum/map_z_level/arfs/ship
 	flags = MAP_LEVEL_STATION|MAP_LEVEL_CONTACT|MAP_LEVEL_PLAYER|MAP_LEVEL_CONSOLES
-	transit_chance = 5
+
+/datum/map_z_level/arfs/ship/one
+	z = Z_LEVEL_ARFS_ONE
+	name = "ARFS Deck 1"
+	base_turf = /turf/space
+	transit_chance = 20
+
+/datum/map_z_level/arfs/ship/one
+	z = Z_LEVEL_ARFS_TWO
+	name = "ARFS Deck 2"
+	base_turf = /turf/simulated/open
+	transit_chance = 20
 
 /datum/map_z_level/arfs/centcom
 	z = Z_LEVEL_CENTCOM_ARFS

@@ -111,6 +111,39 @@
 	name = "Game Room"
 	icon_state = "amaint"
 
+//Underbelly Maintenance
+
+/area/maintenance/guts
+	name = "Underbelly Maintenance"
+	icon = 'maps/arfs/arfs_areas.dmi'
+	icon_state = "gutsnorth"
+/area/maintenance/guts/stairs
+	name = "Underbelly Stairs"
+	icon_state = "gutsstairs"
+/area/maintenance/guts/SMES
+	name = "Underbelly SMES"
+	icon_state = "gutssmes"
+/area/maintenance/guts/medical
+	name = "Maintenance Medical"
+	icon_state = "gutsmed"
+/area/maintenance/guts/science
+	name = "Maintenance Science"
+	icon_state = "gutssci"
+/area/maintenance/guts/north
+	name = "Guts Northern Hallways"
+/area/maintenance/guts/south
+	name = "Guts Southern Hallways"
+	icon_state = "gutssouth"
+/area/maintenance/guts/dorms/
+	name = "Maintenance Dorms"
+	icon_state = "gutsdorms"
+/area/maintenance/guts/dorms/roomone
+	name = "Maintenance Dorm 1"
+/area/maintenance/guts/dorms/roomtwo
+	name = "Maintenance Dorm 2"
+/area/maintenance/guts/dorms/roomthree
+	name = "Maintenance Dorm 3"
+
 //underdark
 /area/outpost/mining_main/lower_outpost
 	name = "Lower Asteroid Outpost"
