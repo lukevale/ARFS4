@@ -115,19 +115,23 @@
 
 /area/maintenance/guts
 	name = "Underbelly Maintenance"
-	icon_state = "amaint"
+	icon = 'maps/arfs/arfs_areas.dmi'
+	icon_state = "gutsnorth"
 /area/maintenance/guts/stairs
 	name = "Underbelly Stairs"
+	icon_state = "gutsstairs"
 /area/maintenance/guts/SMES
 	name = "Underbelly SMES"
 /area/maintenance/guts/medical
 	name = "Maintenance Medical"
+	icon_state = "gutsmed"
 /area/maintenance/guts/science
 	name = "Maintenance Science"
 /area/maintenance/guts/north
 	name = "Guts Northern Hallways"
 /area/maintenance/guts/south
 	name = "Guts Southern Hallways"
+	icon_state = "gutssouth"
 /area/maintenance/guts/dorms/
 	name = "Maintenance Dorms"
 /area/maintenance/guts/dorms/roomone
