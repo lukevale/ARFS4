@@ -122,11 +122,13 @@
 	icon_state = "gutsstairs"
 /area/maintenance/guts/SMES
 	name = "Underbelly SMES"
+	icon_state = "gutssmes"
 /area/maintenance/guts/medical
 	name = "Maintenance Medical"
 	icon_state = "gutsmed"
 /area/maintenance/guts/science
 	name = "Maintenance Science"
+	icon_state = "gutssci"
 /area/maintenance/guts/north
 	name = "Guts Northern Hallways"
 /area/maintenance/guts/south
@@ -134,6 +136,7 @@
 	icon_state = "gutssouth"
 /area/maintenance/guts/dorms/
 	name = "Maintenance Dorms"
+	icon_state = "gutsdorms"
 /area/maintenance/guts/dorms/roomone
 	name = "Maintenance Dorm 1"
 /area/maintenance/guts/dorms/roomtwo
