@@ -161,6 +161,9 @@
 /area/maintenance/guts/radio
 	name = "GUTS Radio Room"
 	icon_state = "gutsradio"
+/area/maintenance/guts/strip
+	name = "Stripclub"
+	icon_state = "gutsstrip"
 
 //underdark
 /area/outpost/mining_main/lower_outpost
