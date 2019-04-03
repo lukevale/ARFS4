@@ -158,6 +158,9 @@
 /area/maintenance/guts/dungeon
 	name = "Spare Room"
 	icon_state = "gutsdungeon"
+/area/maintenance/guts/radio
+	name = "GUTS Radio Room"
+	icon_state = "gutsradio"
 
 //underdark
 /area/outpost/mining_main/lower_outpost

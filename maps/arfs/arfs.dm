@@ -16,6 +16,7 @@
 	#include "arfs_areas.dm"
 	#include "arfs_shuttles.dm"
 	#include "arfs_underdark.dm"
+	#include "arfs_telecomms.dm"
 
 	#define USING_MAP_DATUM /datum/map/arfs
 
