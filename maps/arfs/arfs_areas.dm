@@ -118,10 +118,10 @@
 	icon = 'maps/arfs/arfs_areas.dmi'
 	icon_state = "gutsnorth"
 /area/maintenance/guts/stairs
-	name = "Underbelly Stairs"
+	name = "GUTS Stairs"
 	icon_state = "gutsstairs"
 /area/maintenance/guts/SMES
-	name = "Underbelly SMES"
+	name = "GUTS SMES"
 	icon_state = "gutssmes"
 /area/maintenance/guts/medical
 	name = "Maintenance Medical"
@@ -130,9 +130,9 @@
 	name = "Maintenance Science"
 	icon_state = "gutssci"
 /area/maintenance/guts/north
-	name = "Guts Northern Hallways"
+	name = "Maintenance Northern Hallways"
 /area/maintenance/guts/south
-	name = "Guts Southern Hallways"
+	name = "Maintenance Southern Hallways"
 	icon_state = "gutssouth"
 /area/maintenance/guts/dorms/
 	name = "Maintenance Dorms"
@@ -143,6 +143,27 @@
 	name = "Maintenance Dorm 2"
 /area/maintenance/guts/dorms/roomthree
 	name = "Maintenance Dorm 3"
+/area/maintenance/guts/bar
+	name = "Maintenance Bar"
+	icon_state = "gutsbar"
+/area/maintenance/guts/arcade
+	name = "Maintenance Arcade"
+	icon_state = "gutsarcade"
+/area/maintenance/guts/shower
+	name = "Maintenance Shower"
+	icon_state = "gutsshower"
+/area/maintenance/guts/jani
+	name = "Maintenance Janitor"
+	icon_state = "gutsjanitalia"
+/area/maintenance/guts/dungeon
+	name = "Spare Room"
+	icon_state = "gutsdungeon"
+/area/maintenance/guts/radio
+	name = "GUTS Radio Room"
+	icon_state = "gutsradio"
+/area/maintenance/guts/strip
+	name = "Stripclub"
+	icon_state = "gutsstrip"
 
 //underdark
 /area/outpost/mining_main/lower_outpost
