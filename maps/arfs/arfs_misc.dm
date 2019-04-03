@@ -113,3 +113,15 @@
 //Landmark Definitions
 /obj/effect/landmark/map_data/arfs
 	height = 2
+
+//Mist like on the Endeavour
+/obj/effect/mist/mapped
+	name = "mist"
+	icon = 'content_arfs/icons/misc/effects.dmi'
+	icon_state = "mist"
+/obj/effect/mist/mapped/moving
+	icon_state = "mist_moving"
+
+//Trash piles should be below the items you find in them
+/obj/structure/trash_pile
+	layer = 2.9
