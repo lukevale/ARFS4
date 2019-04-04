@@ -112,7 +112,7 @@
 
 //Landmark Definitions
 /obj/effect/landmark/map_data/arfs
-	height = 2
+	height = 3
 
 //Mist like on the Endeavour
 /obj/effect/mist/mapped

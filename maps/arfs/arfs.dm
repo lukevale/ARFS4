@@ -10,6 +10,7 @@
 	#include "arfs-5.dmm"
 	#include "arfs-6.dmm"
 	#include "arfs-7.dmm"
+	#include "arfs-8.dmm"
 
 	#include "arfs_defines.dm"
 	#include "arfs_misc.dm"
