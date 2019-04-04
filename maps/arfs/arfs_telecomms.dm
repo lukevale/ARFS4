@@ -8,6 +8,11 @@
 	listening_level = Z_LEVEL_ARFS_TWO
 	autolinkers = list("arfs_2_relay")
 
+/obj/machinery/telecomms/relay/preset/arfs/three
+	id = "ARFS Deck 3 Relay"
+	listening_level = Z_LEVEL_ARFS_THREE
+	autolinkers = list("arfs_3_relay")
+
 /obj/machinery/telecomms/relay/preset/arfs/mining_high
 	id = "Asteroid Surface Relay"
 	listening_level = Z_LEVEL_MINING_ARFS
@@ -22,7 +27,7 @@
 	id = "Hub"
 	network = "tcommsat"
 	autolinkers = list("hub",
-		"arfs_1_relay", "arfs_2_relay", "mining_high", "mining_low",
+		"arfs_1_relay", "arfs_2_relay", "arfs_3_relay", "mining_high", "mining_low",
 		"c_relay", "m_relay", "r_relay", "sci_o_relay", "ud_relay",
 		"science", "medical", "supply", "service", "common", "command", "engineering", "security", "explorer", "unused",
 		"hb_relay", "receiverA", "broadcasterA"
