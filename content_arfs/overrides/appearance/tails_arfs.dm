@@ -514,3 +514,16 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "robodragonalt"
+//Taurs
+
+/datum/sprite_accessory/tail/taur/naga/robot
+	name = "Robot Naga (Non-colorable)"
+	icon_state = "robot_naga_s"
+	icon = 'content_arfs/icons/mob/player/taur_arfs.dmi'
+/datum/sprite_accessory/tail/taur/naga/robot/color
+	name = "Robot Naga (Colorable)"
+	icon_state = "robot_nagac_s"
+	icon = 'content_arfs/icons/mob/player/taur_arfs.dmi'
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "robot_nagac_1_s"

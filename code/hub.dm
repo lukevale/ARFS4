@@ -3,7 +3,7 @@
 	hub = "Exadv1.spacestation13"
 	//hub_password = "SORRYNOPASSWORD"
 	hub_password = "kMZy3U5jJHSiBQjr"
-	name = "Space Station 13"
+	name = "Aphrodite - Roleplayers Refuge!  Open to roleplayers, erotic or otherwise.  We're you're refuge from the tide!  Join our discord to let us toggle the panic bunker and let you in! https://discord.gg/3RxRHWd "
 
 /* This is for any host that would like their server to appear on the main SS13 hub.
 To use it, simply replace the password above, with the password found below, and it should work.
