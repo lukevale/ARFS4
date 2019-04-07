@@ -103,7 +103,7 @@ var/global/datum/global_init/init = new ()
 
 	//Must be done now, otherwise ZAS zones and lighting overlays need to be recreated.
 	createRandomZlevel()
-	
+
 	processScheduler = new
 	master_controller = new /datum/controller/game_controller()
 
@@ -432,7 +432,7 @@ var/world_topic_spam_protect_time = world.timeofday
 			log_admin("[key_name(usr)] Has requested an immediate world restart via client side debugging tools")
 			message_admins("[key_name_admin(usr)] Has requested an immediate world restart via client side debugging tools")
 			world << "<span class='boldannounce'>[key_name_admin(usr)] has requested an immediate world restart via client side debugging tools</span>"
-			
+
 		else
 			world << "<span class='boldannounce'>Rebooting world immediately due to host request</span>"
 	else
@@ -537,7 +537,7 @@ var/world_topic_spam_protect_time = world.timeofday
 	s += " ("
 	s += "<a href=\"http://\">" //Change this to wherever you want the hub to link to.
 //	s += "[game_version]"
-	s += "Default"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += "Hey!  We're a refuge for all people who want to just roleplay, erotic or otherwise.  Join our gated discord and we'll open the panic bunker to let you in.  https://discord.gg/vxfsg9T "  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"
 	s += ")"
 
