@@ -532,15 +532,16 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	if (config && config.server_name)
 		s += "<b>[config.server_name]</b> &#8212; "
-
+	//ARFS EDIT - Our own hub message.
 	s += "<b>[station_name()]</b>";
 	s += " ("
-	s += "<a href=\"http://\">" //Change this to wherever you want the hub to link to.
-//	s += "[game_version]"
-	s += "Hey!  We're a refuge for all people who want to just roleplay, erotic or otherwise.  Join our gated discord and we'll open the panic bunker to let you in.  https://discord.gg/vxfsg9T "  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += "Hey!  We're a refuge for all people who want to just roleplay, erotic or otherwise. Join our discord for more info!"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += "<a href=\"http://https://discord.gg/vxfsg9T\">" //Change this to wherever you want the hub to link to.
+	s += "Discord Link"
 	s += "</a>"
+//	s += "[game_version]"
 	s += ")"
-
+	//END ARFS EDIT
 	var/list/features = list()
 
 	if(ticker)
