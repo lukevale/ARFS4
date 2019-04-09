@@ -164,6 +164,9 @@
 /area/maintenance/guts/strip
 	name = "Stripclub"
 	icon_state = "gutsstrip"
+/area/maintenance/guts/eva
+	name = "GUTS EVA"
+	icon_state = "gutseva"
 
 //underdark
 /area/outpost/mining_main/lower_outpost
