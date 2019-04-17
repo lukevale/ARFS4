@@ -290,3 +290,102 @@
 	Insert directly into brain.\""
 
 	stored = /datum/nifsoft/worldbend
+
+/obj/item/weapon/disk/nifsoft/arfs_engineering
+	name = "NIFSoft Disk - Engineering"
+	desc = "Contains free NIFSofts useful for engineering members.\n\
+	It has a small label: \n\
+	\"Portable NIFSoft Disk. \n\
+	Insert directly into brain.\""
+
+	stored = /datum/nifsoft/package/arfs_engineering
+
+/obj/item/weapon/disk/nifsoft/arfs_engineering/synth
+	name = "NIFSoft Disk - Engineering - Synth"
+	desc = "Contains free NIFSofts useful for synthetic engineering members.\n\
+	It has a small label: \n\
+	\"Portable NIFSoft Disk. \n\
+	Insert directly into brain.\""
+
+	stored = /datum/nifsoft/package/arfs_engineering/synth
+
+/obj/item/weapon/disk/nifsoft/arfs_security
+	name = "NIFSoft Disk - Security"
+	desc = "Contains free NIFSofts useful for security members.\n\
+	It has a small label: \n\
+	\"Portable NIFSoft Disk. \n\
+	Insert directly into brain.\""
+
+	stored = /datum/nifsoft/package/arfs_security
+
+/obj/item/weapon/disk/nifsoft/arfs_security/synth
+	name = "NIFSoft Disk - Security - Synth"
+	desc = "Contains free NIFSofts useful for synthetic security members.\n\
+	It has a small label: \n\
+	\"Portable NIFSoft Disk. \n\
+	Insert directly into brain.\""
+
+	stored = /datum/nifsoft/package/arfs_security/synth
+
+/obj/item/weapon/disk/nifsoft/arfs_medical
+	name = "NIFSoft Disk - Medical"
+	desc = "Contains free NIFSofts useful for medical members.\n\
+	It has a small label: \n\
+	\"Portable NIFSoft Disk. \n\
+	Insert directly into brain.\""
+
+	stored = /datum/nifsoft/package/arfs_medical
+
+/obj/item/weapon/disk/nifsoft/arfs_medical/synth
+	name = "NIFSoft Disk - Medical - Synth"
+	desc = "Contains free NIFSofts useful for synthetic medical members.\n\
+	It has a small label: \n\
+	\"Portable NIFSoft Disk. \n\
+	Insert directly into brain.\""
+
+	stored = /datum/nifsoft/package/arfs_medical/synth
+
+/obj/item/weapon/disk/nifsoft/arfs_science
+	name = "NIFSoft Disk - Science"
+	desc = "Contains free NIFSofts useful for science members.\n\
+	It has a small label: \n\
+	\"Portable NIFSoft Disk. \n\
+	Insert directly into brain.\""
+
+	stored = /datum/nifsoft/package/arfs_science
+
+/obj/item/weapon/disk/nifsoft/arfs_science/synth
+	name = "NIFSoft Disk - Science - Synth"
+	desc = "Contains free NIFSofts useful for synthetic science members.\n\
+	It has a small label: \n\
+	\"Portable NIFSoft Disk. \n\
+	Insert directly into brain.\""
+
+	stored = /datum/nifsoft/package/arfs_science/synth
+
+/obj/item/weapon/disk/nifsoft/arfs_command
+	name = "NIFSoft Disk - Command"
+	desc = "Contains free NIFSofts useful for command members.\n\
+	It has a small label: \n\
+	\"Portable NIFSoft Disk. \n\
+	Insert directly into brain.\""
+
+	stored = /datum/nifsoft/package/arfs_command
+
+/obj/item/weapon/disk/nifsoft/arfs_mining
+	name = "NIFSoft Disk - Mining"
+	desc = "Contains free NIFSofts useful for mining members.\n\
+	It has a small label: \n\
+	\"Portable NIFSoft Disk. \n\
+	Insert directly into brain.\""
+
+	stored = /datum/nifsoft/package/arfs_mining
+
+/obj/item/weapon/disk/nifsoft/arfs_mining/synth
+	name = "NIFSoft Disk - Mining - Synth"
+	desc = "Contains free NIFSofts useful for synthetic mining members.\n\
+	It has a small label: \n\
+	\"Portable NIFSoft Disk. \n\
+	Insert directly into brain.\""
+
+	stored = /datum/nifsoft/package/arfs_mining/synth
