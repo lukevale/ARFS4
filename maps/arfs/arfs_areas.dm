@@ -167,6 +167,15 @@
 /area/maintenance/guts/eva
 	name = "GUTS EVA"
 	icon_state = "gutseva"
+/area/maintenance/guts/meeting
+	name = "Meeting Room"
+	icon_state = "gutsmeeting"
+/area/maintenance/guts/lounge
+	name = "Lounge"
+	icon_state = "gutslounge"
+/area/maintenance/guts/storage
+	name = "GUTS Secure Storage"
+	icon_state = "gutsstorage"
 
 //Research Outpost
 /area/outpost/research/solars
