@@ -344,3 +344,114 @@
 	..()
 	for(var/i = 0 to 7)
 		new /obj/item/weapon/disk/nifsoft/worldbend(src)
+
+
+/obj/item/weapon/storage/box/nifsofts_arfs_mining
+	name = "mining nifsoft disks"
+	desc = "A box of free nifsofts for mining employees."
+	icon_state = "disk_kit"
+
+/obj/item/weapon/storage/box/nifsofts_arfs_mining/New()
+	..()
+	for(var/i = 0 to 7)
+		new /obj/item/weapon/disk/nifsoft/arfs_mining(src)
+
+/obj/item/weapon/storage/box/nifsofts_arfs_mining_synth
+	name = "synth mining nifsoft disks"
+	desc = "A box of free nifsofts for synthetic mining employees."
+	icon_state = "disk_kit"
+
+/obj/item/weapon/storage/box/nifsofts_arfs_mining_synth/New()
+	..()
+	for(var/i = 0 to 7)
+		new /obj/item/weapon/disk/nifsoft/arfs_mining/synth(src)
+
+/obj/item/weapon/storage/box/nifsofts_arfs_security
+	name = "security nifsoft disks"
+	desc = "A box of free nifsofts for security employees."
+	icon_state = "disk_kit"
+
+/obj/item/weapon/storage/box/nifsofts_arfs_security/New()
+	..()
+	for(var/i = 0 to 7)
+		new /obj/item/weapon/disk/nifsoft/arfs_security(src)
+
+/obj/item/weapon/storage/box/nifsofts_arfs_security_synth
+	name = "synth security nifsoft disks"
+	desc = "A box of free nifsofts for synthetic security employees."
+	icon_state = "disk_kit"
+
+/obj/item/weapon/storage/box/nifsofts_arfs_security_synth/New()
+	..()
+	for(var/i = 0 to 7)
+		new /obj/item/weapon/disk/nifsoft/arfs_security/synth(src)
+
+/obj/item/weapon/storage/box/nifsofts_arfs_engineering
+	name = "engineering nifsoft disks"
+	desc = "A box of free nifsofts for engineering employees."
+	icon_state = "disk_kit"
+
+/obj/item/weapon/storage/box/nifsofts_arfs_engineering/New()
+	..()
+	for(var/i = 0 to 7)
+		new /obj/item/weapon/disk/nifsoft/arfs_engineering(src)
+
+/obj/item/weapon/storage/box/nifsofts_arfs_engineering_synth
+	name = "synth engineering nifsoft disks"
+	desc = "A box of free nifsofts for synthetic engineering employees."
+	icon_state = "disk_kit"
+
+/obj/item/weapon/storage/box/nifsofts_arfs_engineering_synth/New()
+	..()
+	for(var/i = 0 to 7)
+		new /obj/item/weapon/disk/nifsoft/arfs_engineering/synth(src)
+
+/obj/item/weapon/storage/box/nifsofts_arfs_medical
+	name = "medical nifsoft disks"
+	desc = "A box of free nifsofts for medical employees."
+	icon_state = "disk_kit"
+
+/obj/item/weapon/storage/box/nifsofts_arfs_medical/New()
+	..()
+	for(var/i = 0 to 7)
+		new /obj/item/weapon/disk/nifsoft/arfs_medical(src)
+
+/obj/item/weapon/storage/box/nifsofts_arfs_medical_synth
+	name = "synth medical nifsoft disks"
+	desc = "A box of free nifsofts for synthetic medical employees."
+	icon_state = "disk_kit"
+
+/obj/item/weapon/storage/box/nifsofts_arfs_medical_synth/New()
+	..()
+	for(var/i = 0 to 7)
+		new /obj/item/weapon/disk/nifsoft/arfs_medical/synth(src)
+
+/obj/item/weapon/storage/box/nifsofts_arfs_science
+	name = "science nifsoft disks"
+	desc = "A box of free nifsofts for science employees."
+	icon_state = "disk_kit"
+
+/obj/item/weapon/storage/box/nifsofts_arfs_science/New()
+	..()
+	for(var/i = 0 to 7)
+		new /obj/item/weapon/disk/nifsoft/arfs_science(src)
+
+/obj/item/weapon/storage/box/nifsofts_arfs_science_synth
+	name = "synth science nifsoft disks"
+	desc = "A box of free nifsofts for synthetic science employees."
+	icon_state = "disk_kit"
+
+/obj/item/weapon/storage/box/nifsofts_arfs_science_synth/New()
+	..()
+	for(var/i = 0 to 7)
+		new /obj/item/weapon/disk/nifsoft/arfs_science/synth(src)
+
+/obj/item/weapon/storage/box/nifsofts_arfs_command
+	name = "command nifsoft disks"
+	desc = "A box of free nifsofts for command employees."
+	icon_state = "disk_kit"
+
+/obj/item/weapon/storage/box/nifsofts_arfs_command/New()
+	..()
+	for(var/i = 0 to 7)
+		new /obj/item/weapon/disk/nifsoft/arfs_command(src)
