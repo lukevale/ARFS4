@@ -10,8 +10,6 @@
 #define Z_LEVEL_BOTTOM_DECK				Z_LEVEL_ARFS_ONE
 #define Z_LEVEL_TOP_DECK				Z_LEVEL_ARFS_THREE
 
-
-
 /datum/map/arfs
 	name = "ARFS"
 	full_name = "ARFS Dallus"
@@ -21,31 +19,6 @@
 
 	lobby_icon = 'content_arfs/icons/misc/arfs_endeavor.dmi'
 	lobby_screens = list("arfs")
-/*
-	station_levels = list(
-		Z_LEVEL_MAIN_ARFS,
-		)
-
-	admin_levels = list(Z_LEVEL_CENTCOM_ARFS)
-
-	contact_levels = list(
-		Z_LEVEL_MAIN_ARFS,
-		Z_LEVEL_CENTCOM_ARFS,
-		Z_LEVEL_MINING_ARFS
-		)
-
-	player_levels = list(
-		Z_LEVEL_MAIN_ARFS,
-		Z_LEVEL_EMPTY_ARFS,
-		Z_LEVEL_ABANDONED_ASTEROID_ARFS,
-		Z_LEVEL_MINING_ARFS
-		)
-
-	accessible_z_levels = list("1" = 5, "3" = 60, "4" = 10, "5" = 30, "6" = 25) // The defines can't be used here sadly.
-
-	base_turf_by_z = list("5" = /turf/simulated/mineral/floor)
-*/
-// to do: change accordingly for arfs.
 
 	station_name  = "A.R.F.S. Dallus"
 	station_short = "Dallus"
@@ -66,23 +39,23 @@
 	emergency_shuttle_recall_message = "The emergency shuttle has been recalled."
 
 	station_networks = list(
-							NETWORK_CARGO,
-							NETWORK_CIVILIAN,
-							NETWORK_COMMAND,
-							NETWORK_ENGINE,
-							NETWORK_ENGINEERING,
-							NETWORK_ENGINEERING_OUTPOST,
-							NETWORK_DEFAULT,
-							NETWORK_MEDICAL,
-							NETWORK_MINE,
-							NETWORK_NORTHERN_STAR,
-							NETWORK_RESEARCH,
-							NETWORK_RESEARCH_OUTPOST,
-							NETWORK_ROBOTS,
-							NETWORK_PRISON,
-							NETWORK_SECURITY,
-							NETWORK_INTERROGATION
-							)
+		NETWORK_CARGO,
+		NETWORK_CIVILIAN,
+		NETWORK_COMMAND,
+		NETWORK_ENGINE,
+		NETWORK_ENGINEERING,
+		NETWORK_ENGINEERING_OUTPOST,
+		NETWORK_DEFAULT,
+		NETWORK_MEDICAL,
+		NETWORK_MINE,
+		NETWORK_NORTHERN_STAR,
+		NETWORK_RESEARCH,
+		NETWORK_RESEARCH_OUTPOST,
+		NETWORK_ROBOTS,
+		NETWORK_PRISON,
+		NETWORK_SECURITY,
+		NETWORK_INTERROGATION
+	)
 
 	allowed_spawns = list("Cryogenic Storage")
 
