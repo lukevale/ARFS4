@@ -168,6 +168,16 @@
 	name = "GUTS EVA"
 	icon_state = "gutseva"
 
+//Research Outpost
+/area/outpost/research/solars
+	name = "Research Outpost solars"
+	dynamic_lighting = 0
+
+//Mining Outpost
+/area/outpost/mining_main/solars
+	name = "Mining Outpost solars"
+	dynamic_lighting = 0
+
 //underdark
 /area/outpost/mining_main/lower_outpost
 	name = "Lower Asteroid Outpost"
