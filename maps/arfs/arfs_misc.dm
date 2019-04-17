@@ -12,6 +12,15 @@
 	maxhealth = 60
 	fulltile = TRUE
 
+// SUPPLY CRATES
+/obj/structure/closet/crate/engineering/antimatter
+	name = "Antimatter Engine crate"
+	starts_with = list(
+		/obj/item/weapon/am_containment = 2,
+		/obj/item/device/am_shielding_container = 9,
+		/obj/item/stack/cable_coil = 2,
+		/obj/item/device/multitool
+		)
 
 //
 // Holodorms
