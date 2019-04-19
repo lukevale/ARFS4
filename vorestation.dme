@@ -3015,6 +3015,7 @@
 #include "content_arfs\code\areas.dm"
 #include "content_arfs\code\jukebox.dm"
 #include "content_arfs\code\stylesheet.dm"
+#include "content_arfs\code\controllers\Processes\autobunker.dm"
 #include "content_arfs\code\donater\devices.dm"
 #include "content_arfs\code\donater\hats.dm"
 #include "content_arfs\code\donater\misc.dm"
