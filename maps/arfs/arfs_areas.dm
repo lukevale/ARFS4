@@ -21,6 +21,17 @@
 	name = "\improper Research Lower Hallway"
 	icon_state = "research"
 
+//Engineering
+/area/shuttle/Engineering
+	name = "\improper Engineering Shuttle"
+
+/area/shuttle/Engineering/station
+	icon_state = "shuttle2"
+
+/area/shuttle/Engineering/outpost
+	icon_state = "shuttle"
+
+
 // AI
 
 /area/ai/foyer
