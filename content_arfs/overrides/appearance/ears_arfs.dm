@@ -245,3 +245,13 @@
 	icon_state = "mega absol"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/carphead
+	name = "Carp head, non-colorable."
+	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
+	icon_state = "carphead"
+
+/datum/sprite_accessory/ears/raichuhead
+	name = "raichu head, non-colorable."
+	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
+	icon_state = "raichuhead"
