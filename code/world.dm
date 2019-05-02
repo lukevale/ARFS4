@@ -536,7 +536,7 @@ var/world_topic_spam_protect_time = world.timeofday
 	s += "<b>[station_name()]</b>";
 	s += " ("
 	s += "Hey!  We're a refuge for all people who want to just roleplay, erotic or otherwise. Join our discord for more info!"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
-	s += "<a href=\"http://https://discord.gg/vxfsg9T\">" //Change this to wherever you want the hub to link to.
+	s += "<a href=\"http://https://discord.gg/VcFjDNT\">" //Change this to wherever you want the hub to link to.
 	s += " Discord Link"
 	s += "</a>"
 //	s += "[game_version]"
