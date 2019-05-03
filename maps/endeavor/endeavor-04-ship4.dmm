@@ -518,7 +518,7 @@
 "jX" = (/obj/item/weapon/stool/padded,/obj/effect/landmark/start{name = "Security Officer"},/turf/simulated/floor/wood,/area/security/breakroom)
 "jY" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/techmaint,/area/storage/emergency_storage/deckfour)
 "jZ" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/obj/structure/disposalpipe/segment{dir = 4; icon_state = "pipe-c"},/turf/simulated/floor/plating,/area/maintenance/substation/deckfour)
-"ka" = (/obj/structure/table/woodentable,/turf/simulated/floor/wood,/area/security/breakroom)
+"ka" = (/obj/structure/table/woodentable,/obj/item/weapon/storage/box/nifsofts_arfs_security_synth{pixel_x = 5; pixel_y = 5},/obj/item/weapon/storage/box/nifsofts_arfs_security,/turf/simulated/floor/wood,/area/security/breakroom)
 "kb" = (/obj/structure/foamedmetal,/obj/structure/grille,/turf/simulated/floor/plating,/area/maintenance/security_starboard)
 "kc" = (/obj/machinery/light/small{dir = 8},/obj/structure/table/standard,/obj/item/weapon/storage/firstaid/o2,/turf/simulated/floor/tiled/techmaint,/area/storage/emergency_storage/deckfour)
 "kd" = (/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/tiled/techmaint,/area/storage/emergency_storage/deckfour)
