@@ -136,9 +136,34 @@
 			into the stars! We'll wake you up when you're needed!"
 
 //Signs
-/obj/structure/sign/deck5
+/obj/structure/sign/endeavourdecks/
+/obj/structure/sign/endeavourdecks/one
+	icon = 'icons/obj/decals_vr.dmi'
+	desc = "A silver sign which reads 'DECK I'. It lists that medbay, the gateway, science, telecommunications, and mining are on this deck."
+	name = "DECK I"
+	icon_state = "deck1"
+
+/obj/structure/sign/endeavourdecks/two
+	icon = 'icons/obj/decals_vr.dmi'
+	desc = "A silver sign which reads 'DECK II'. It lists that engineering, atmospherics, the Captain's Office, and parts of science and medical are on this deck. "
+	name = "DECK II"
+	icon_state = "deck2"
+
+/obj/structure/sign/endeavourdecks/three
+	icon = 'icons/obj/decals_vr.dmi'
+	desc = "A silver sign which reads 'DECK III'. It lists that the bridge, bar, hydroponics, fitness, and primary EVA are on this deck."
+	name = "DECK III"
+	icon_state = "deck3"
+
+/obj/structure/sign/endeavourdecks/four
+	icon = 'icons/obj/decals_vr.dmi'
+	desc = "A silver sign which reads 'DECK IV'. It lists that supply, Security, and the escape shuttle and explorer's shuttle docks are on this deck."
+	name = "DECK IV"
+	icon_state = "deck4"
+
+/obj/structure/sign/endeavourdecks/five
 	icon = 'maps/endeavor/endeavor_decals.dmi'
-	desc = "A silver sign which reads 'DECK V'."
+	desc = "A silver sign which reads 'DECK V'. It lists that part of security, the dormitories, locker room, holodeck, and the AI chambers are on this deck."
 	name = "DECK V"
 	icon_state = "deck5"
 
