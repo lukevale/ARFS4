@@ -251,7 +251,7 @@
 "eQ" = (/obj/machinery/telecomms/bus/preset_two,/turf/simulated/floor/bluegrid,/area/tcomfoyer{name = "\improper Telecomms"})
 "eR" = (/obj/machinery/telecomms/processor/preset_two,/turf/simulated/floor/bluegrid,/area/tcomfoyer{name = "\improper Telecomms"})
 "eS" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/floor_decal/spline/fancy{tag = "icon-spline_fancy (WEST)"; icon_state = "spline_fancy"; dir = 8},/turf/simulated/floor/tiled/dark,/area/tcomfoyer{name = "\improper Telecomms"})
-"eT" = (/obj/machinery/hologram/holopad,/turf/simulated/floor/greengrid,/area/tcomfoyer{name = "\improper Telecomms"})
+"eT" = (/obj/machinery/ntnet_relay,/turf/simulated/floor/greengrid,/area/tcomfoyer{name = "\improper Telecomms"})
 "eU" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/effect/floor_decal/spline/fancy{tag = "icon-spline_fancy (EAST)"; icon_state = "spline_fancy"; dir = 4},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/dark,/area/tcomfoyer{name = "\improper Telecomms"})
 "eV" = (/obj/machinery/telecomms/processor/preset_four,/turf/simulated/floor/bluegrid,/area/tcomfoyer{name = "\improper Telecomms"})
 "eW" = (/obj/machinery/telecomms/bus/preset_four,/turf/simulated/floor/bluegrid,/area/tcomfoyer{name = "\improper Telecomms"})

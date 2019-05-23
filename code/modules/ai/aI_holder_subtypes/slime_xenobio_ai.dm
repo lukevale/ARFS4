@@ -5,6 +5,7 @@
 	hostile = TRUE
 	cooperative = TRUE
 	firing_lanes = TRUE
+	mauling = TRUE // They need it to get the most out of monkeys.
 	var/rabid = FALSE	// Will attack regardless of discipline.
 	var/discipline = 0	// Beating slimes makes them less likely to lash out.  In theory.
 	var/resentment = 0	// 'Unjustified' beatings make this go up, and makes it more likely for abused slimes to go rabid.
@@ -14,6 +15,12 @@
 
 	var/last_discipline_decay = null // Last world.time discipline was reduced from decay.
 	var/discipline_decay_time = 5 SECONDS // Earliest that one discipline can decay.
+
+	var/list/grudges = list() // List of Prometheans who are jerks.
+
+/datum/ai_holder/simple_mob/xenobio_slime/Destroy()
+	grudges.Cut()
+	..()
 
 /datum/ai_holder/simple_mob/xenobio_slime/sapphire
 	always_stun = TRUE // They know that stuns are godly.
@@ -33,14 +40,22 @@
 
 // Checks if disciplining the slime would be 'justified' right now.
 /datum/ai_holder/simple_mob/xenobio_slime/proc/is_justified_to_discipline()
+	ai_log("xenobio_slime/is_justified_to_discipline() : Entered.", AI_LOG_TRACE)
+	if(!can_act())
+		ai_log("xenobio_slime/is_justified_to_discipline() : Judged to be unjustified because we cannot act. Exiting.", AI_LOG_DEBUG)
+		return FALSE // The slime considers it abuse if they get stunned while already stunned.
 	if(rabid)
+		ai_log("xenobio_slime/is_justified_to_discipline() : Judged to be justified because we're rabid. Exiting.", AI_LOG_TRACE)
 		return TRUE
-	if(target)
+	if(target && can_attack(target))
 		if(ishuman(target))
 			var/mob/living/carbon/human/H = target
 			if(istype(H.species, /datum/species/monkey))
+				ai_log("xenobio_slime/is_justified_to_discipline() : Judged to be unjustified because we're targeting a monkey. Exiting.", AI_LOG_DEBUG)
 				return FALSE // Attacking monkeys is okay.
+		ai_log("xenobio_slime/is_justified_to_discipline() : Judged to be justified because we are targeting a non-monkey. Exiting.", AI_LOG_TRACE)
 		return TRUE // Otherwise attacking other things is bad.
+	ai_log("xenobio_slime/is_justified_to_discipline() : Judged to be unjustified because we are not targeting anything. Exiting.", AI_LOG_DEBUG)
 	return FALSE // Not attacking anything.
 
 /datum/ai_holder/simple_mob/xenobio_slime/proc/can_command(mob/living/commander)
@@ -61,7 +76,7 @@
 	if(amount > 0)
 		if(rabid)
 			return
-		var/justified = is_justified_to_discipline()
+		var/justified = my_slime.is_justified_to_discipline() // This will also consider the AI-side of that proc.
 		lost_target() // Stop attacking.
 
 		if(justified)
@@ -159,10 +174,20 @@
 			var/mob/living/carbon/human/H = AM
 			if(istype(H.species, /datum/species/monkey)) // istype() is so they'll eat the alien monkeys too.
 				return TRUE // Monkeys are always food (sorry Pun Pun).
-			else if(H.species && H.species.name == SPECIES_PROMETHEAN)
-				return FALSE // Prometheans are always our friends.
+			else if(H.species && H.species.name == SPECIES_PROMETHEAN) // Prometheans are always our friends.
+				if(H in grudges) // Unless they're an ass.
+					return TRUE
+				return FALSE
 		if(discipline && !rabid)
 			return FALSE // We're a good slime.
+
+/datum/ai_holder/simple_mob/xenobio_slime/react_to_attack(atom/movable/attacker)
+	. = ..(attacker)
+
+	if(ishuman(attacker))
+		var/mob/living/carbon/human/H = attacker
+		if(H.species && H.species.name == SPECIES_PROMETHEAN)	// They're a jerk.
+			grudges |= H
 
 // Commands, reactions, etc
 /datum/ai_holder/simple_mob/xenobio_slime/on_hear_say(mob/living/speaker, message)

@@ -1,12 +1,19 @@
+/datum/category_item/catalogue/fauna/shadekin		//TODO: VIRGO_LORE_WRITING_WIP
+	name = "Sapients - Shadekin"
+	desc = ""
+	value = CATALOGUER_REWARD_EASY
+
 /mob/living/simple_mob/shadekin //Spawning the prototype spawns a random one, see initialize()
 	name = "shadekin"
 	desc = "Some sort of fluffer. Big ears, long tail."
+	catalogue_data = list(/datum/category_item/catalogue/fauna/shadekin)
 	icon = 'icons/mob/vore_shadekin.dmi'
 	icon_state = "map_example"
 	icon_living = "map_example"
 	faction = "shadekin"
 	ui_icons = 'icons/mob/shadekin_hud.dmi'
 	mob_class = MOB_CLASS_HUMANOID
+	mob_bump_flag = 0
 
 	maxHealth = 200
 	health = 200
@@ -75,7 +82,7 @@
 
 	var/list/shadekin_abilities
 
-/mob/living/simple_mob/shadekin/initialize()
+/mob/living/simple_mob/shadekin/Initialize()
 	//You spawned the prototype, and want a totally random one.
 	if(type == /mob/living/simple_mob/shadekin)
 
@@ -129,7 +136,7 @@
 	return ..()
 
 /mob/living/simple_mob/shadekin/Destroy()
-	QDEL_NULL_LIST(shadekin_abilities)
+	QDEL_LIST_NULL(shadekin_abilities)
 	. = ..()
 
 /mob/living/simple_mob/shadekin/init_vore()
@@ -242,6 +249,12 @@
 /mob/living/simple_mob/shadekin/Life()
 	if((. = ..()))
 		handle_shade()
+
+/mob/living/simple_mob/shadekin/handle_atmos()
+	if(ability_flags & AB_PHASE_SHIFTED)
+		return
+	else
+		return .=..()
 
 /mob/living/simple_mob/shadekin/proc/handle_shade()
 	//Shifted kin don't gain/lose energy (and save time if we're at the cap)

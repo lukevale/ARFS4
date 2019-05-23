@@ -152,7 +152,7 @@
 		return TRUE
 
 	if(Process_Spacemove()) //Checks for active jetpack
-		return FALSE
+		return TRUE
 
 	for(var/turf/simulated/T in trange(1,src)) //Robots get "magboots"
 		if(T.density)
@@ -336,6 +336,10 @@
 
 	// Detect if we made a silent landing.
 	if(locate(/obj/structure/stairs) in landing)
+		if(isliving(src))
+			var/mob/living/L = src
+			if(L.pulling)
+				L.pulling.forceMove(landing)
 		return 1
 	else
 		var/atom/A = find_fall_target(oldloc, landing)

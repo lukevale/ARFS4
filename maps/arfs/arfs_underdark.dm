@@ -27,14 +27,14 @@
 	var/mob/living/simple_mob/my_mob
 	var/depleted = FALSE
 
-/obj/tether_away_spawner/initialize()
+/obj/tether_away_spawner/Initialize()
 	. = ..()
 
 	if(!LAZYLEN(mobs_to_pick_from))
 		error("Mob spawner at [x],[y],[z] ([get_area(src)]) had no mobs_to_pick_from set on it!")
 		initialized = TRUE
 		return INITIALIZE_HINT_QDEL
-	processing_objects |= src
+	START_PROCESSING(SSobj, src)
 
 /obj/tether_away_spawner/process()
 	if(my_mob && my_mob.stat != DEAD)
@@ -77,7 +77,7 @@
 
 		return
 	else
-		processing_objects -= src
+		STOP_PROCESSING(SSobj, src)
 		depleted = TRUE
 		return
 
@@ -90,7 +90,7 @@
 	prob_fall = 50
 	guard = 20
 	mobs_to_pick_from = list(
-		/mob/living/simple_mob/hostile/jelly = 3,
+		/mob/living/simple_mob/animal/space/jelly = 3,
 		/mob/living/simple_mob/animal/giant_spider/hunter = 1,
 		/mob/living/simple_mob/animal/giant_spider/phorogenic = 1,
 		/mob/living/simple_mob/animal/giant_spider/lurker = 1,
@@ -104,8 +104,8 @@
 	prob_fall = 50
 	guard = 20
 	mobs_to_pick_from = list(
-		/mob/living/simple_mob/vore/corrupthound = 1,
-		/mob/living/simple_mob/vore/rat = 1,
+		/mob/living/simple_mob/vore/aggressive/corrupthound = 1,
+		/mob/living/simple_mob/vore/aggressive/rat = 1,
 		/mob/living/simple_mob/animal/space/mimic = 1
 	)
 
@@ -117,5 +117,5 @@
 	prob_fall = 100
 	guard = 70
 	mobs_to_pick_from = list(
-		/mob/living/simple_mob/vore/dragon = 1
+		/mob/living/simple_mob/vore/aggressive/dragon = 1
 	)

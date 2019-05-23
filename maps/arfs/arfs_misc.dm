@@ -95,7 +95,7 @@
 	icon_state = "stairs"
 	invisibility = 0
 	layer = 3.2
-/obj/effect/step_trigger/teleporter/to_underdark/initialize()
+/obj/effect/step_trigger/teleporter/to_underdark/Initialize()
 	. = ..()
 	teleport_x = x
 	teleport_y = y
@@ -109,7 +109,7 @@
 	icon_state = "stairs"
 	invisibility = 0
 	layer = 3.2
-/obj/effect/step_trigger/teleporter/from_underdark/initialize()
+/obj/effect/step_trigger/teleporter/from_underdark/Initialize()
 	. = ..()
 	teleport_x = x
 	teleport_y = y

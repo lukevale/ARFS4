@@ -1,4 +1,4 @@
-/mob/living/simple_mob/hostile/jelly
+/mob/living/simple_mob/animal/space/jelly
 	name = "jelly blob"
 	desc = "Some sort of undulating blob of slime!"
 
@@ -11,14 +11,14 @@
 	maxHealth = 50
 	health = 50
 
-	melee_damage_lower = 5
-	melee_damage_upper = 15
+	melee_damage_lower = 2
+	melee_damage_upper = 7
 
 	say_list_type = /datum/say_list/jelly
 	ai_holder_type = /datum/ai_holder/simple_mob/retaliate/jelly
 
 // Activate Noms!
-/mob/living/simple_mob/hostile/jelly
+/mob/living/simple_mob/animal/space/jelly
 	vore_active = 1
 	vore_pounce_chance = 0
 	vore_icons = SA_ICON_LIVING
