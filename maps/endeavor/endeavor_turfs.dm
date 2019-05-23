@@ -90,7 +90,7 @@
 /turf/space/bluespace
 	name = "bluespace"
 	icon_state = "bluespace"
-/turf/space/bluespace/initialize()
+/turf/space/bluespace/Initialize()
 	..()
 	icon_state = "bluespace"
 
@@ -99,7 +99,7 @@
 	name = "sand transit"
 	icon = 'icons/turf/transit_vr.dmi'
 	icon_state = "desert_ns"
-/turf/space/sandyscroll/initialize()
+/turf/space/sandyscroll/Initialize()
 	..()
 	icon_state = "desert_ns"
 
@@ -107,7 +107,7 @@
 	name = "sand transit"
 	icon = 'maps/endeavor/endeavor_turfs.dmi'
 	icon_state = "desert_sn"
-/turf/space/sandyscroll/initialize()
+/turf/space/sandyscroll/Initialize()
 	..()
 	icon_state = "desert_sn"
 
@@ -116,7 +116,7 @@
 /turf/simulated/sky/odin5
 	color = "#FFBBBB"
 
-/turf/simulated/sky/odin5/initialize()
+/turf/simulated/sky/odin5/Initialize()
 	SSplanets.addTurf(src)
 	set_light(2, 2, "#FFBBBB")
 

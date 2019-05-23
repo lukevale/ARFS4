@@ -1,4 +1,4 @@
-/mob/living/simple_mob/vore/rat
+/mob/living/simple_mob/vore/aggressive/rat
 	name = "giant rat"
 	desc = "In what passes for a hierarchy among verminous rodents, this one is king."
 	tt_desc = "Mus muscular"
@@ -13,8 +13,8 @@
 	maxHealth = 150
 	health = 150
 
-	melee_damage_lower = 5
-	melee_damage_upper = 15
+	melee_damage_lower = 2
+	melee_damage_upper = 7
 	grab_resist = 100
 
 	response_help = "pets the"
@@ -42,16 +42,16 @@
 
 	var/life_since_foodscan = 0
 
-	say_list_type = /datum/say_list/ratte
+	say_list_type = /datum/say_list/rat
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/rat
 
-/mob/living/simple_mob/vore/rat/passive
+/mob/living/simple_mob/vore/aggressive/rat/tame		//not quite tame but does not attack on sight
 	name = "curious giant rat"
 	desc = "In what passes for a hierarchy among verminous rodents, this one is king. It seems to be more interested on scavenging."
 	var/mob/living/carbon/human/food
 	var/hunger = 0
 /*
-/mob/living/simple_mob/hostile/rat/passive/Life()
+/mob/living/simple_mob/vore/aggressive/rat/tame/Life()
 	. = ..()
 	if(!. || ai_inactive)
 		return
@@ -122,7 +122,7 @@
 			hunger = 0
 			food = null
 
-/mob/living/simple_mob/hostile/rat/passive/attackby(var/obj/item/O, var/mob/user) // Feed the rat your food to satisfy it.
+/mob/living/simple_mob/vore/aggressive/rat/tame/attackby(var/obj/item/O, var/mob/user) // Feed the rat your food to satisfy it.
 	if(istype(O, /obj/item/weapon/reagent_containers/food/snacks))
 		qdel(O)
 		playsound(src.loc,'sound/items/eatfood.ogg', rand(10,50), 1)
@@ -131,7 +131,7 @@
 		return
 	. = ..()
 
-/mob/living/simple_mob/hostile/rat/passive/Found(var/atom/found_atom)
+/mob/living/simple_mob/vore/aggressive/rat/tame/Found(var/atom/found_atom)
 	if(!SA_attackable(found_atom))
 		return null
 	else if(ishuman(found_atom) && will_eat(found_atom))
@@ -146,7 +146,7 @@
 			break
 	return null
 
-/mob/living/simple_mob/hostile/rat/passive/FindTarget()
+/mob/living/simple_mob/vore/aggressive/rat/tame/FindTarget()
 	var/atom/T = null
 	for(var/atom/A in ListTargets(view_range))
 		if(A == src)
@@ -157,7 +157,7 @@
 			break
 	return T
 */
-/mob/living/simple_mob/vore/rat/death()
+/mob/living/simple_mob/vore/aggressive/rat/death()
 	playsound(src, 'sound/effects/mouse_squeak_loud.ogg', 50, 1)
 	..()
 
@@ -167,12 +167,28 @@
 	if(!riding_datum)
 		riding_datum = new /datum/riding/simple_animal(src)
 	verbs |= /mob/living/simple_animal/proc/animal_mount
+
+/mob/living/simple_mob/vore/aggressive/rat/MouseDrop_T(mob/living/M, mob/living/user)
+	return
 */
 
-/mob/living/simple_mob/vore/rat/MouseDrop_T(mob/living/M, mob/living/user)
-	return
+/mob/living/simple_mob/vore/aggressive/rat/phoron
+	name = "phoron rat"
+	desc = "In what passes for a hierarchy among verminous rodents, this one is alien overlord."
+	tt_desc = "Mus muscular phoronis"
 
-/datum/say_list/ratte
+	icon_state = "phorous"		//TODO: proper phoron rat sprites
+	icon_living = "phorous"
+	icon_dead = "phorous-dead"
+	icon_rest = "phorous_rest"
+
+	maxHealth = 175
+	health = 175
+
+	melee_damage_lower = 8
+	melee_damage_upper = 16
+
+/datum/say_list/rat
 	speak = list("Squeek!","SQUEEK!","Squeek?")
 	emote_hear = list("squeeks","squeaks","squiks")
 	emote_see = list("runs in a circle", "shakes", "scritches at something")

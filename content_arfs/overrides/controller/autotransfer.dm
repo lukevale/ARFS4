@@ -2,7 +2,7 @@ datum/controller/transfer_controller/New()
 	timerbuffer = config.vote_autotransfer_initial
 	shift_hard_end = config.vote_autotransfer_initial + (config.vote_autotransfer_interval * 1) //ARFS Edit WHY is this hardcoded? :\ //Change this "1" to how many extend votes you want there to be.
 	shift_last_vote = shift_hard_end - config.vote_autotransfer_interval //VOREStation Edit
-	processing_objects += src
+	START_PROCESSING(SSobj, src)
 
 datum/controller/transfer_controller/process()
 	currenttick = currenttick + 1

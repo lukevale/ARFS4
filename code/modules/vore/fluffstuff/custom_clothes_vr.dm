@@ -907,6 +907,7 @@
 /obj/item/clothing/under/rank/khi
 	name = "Delete Me"
 	desc = "Why did you spawn this one? Dork."
+	catalogue_data = list(/datum/category_item/catalogue/information/organization/khi)
 	sensor_mode = 3
 
 	icon = 'icons/vore/custom_clothes_vr.dmi'
@@ -1689,7 +1690,7 @@ Departamental Swimsuits, for general use
 	icon_state = "kilanosuit_p"
 	item_state = "kilanosuit_p"
 
-//Mewchild: Phi Ahkeen
+//Mewchild: Phi Vietsi
 /obj/item/clothing/gloves/ring/seal/signet/fluff/phi
 	name = "Phi's Bone Signet Ring"
 	desc = "A signet ring belonging to Phi, carved from the bones of something long extinct, as a ward against bad luck."

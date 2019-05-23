@@ -1,5 +1,6 @@
 /mob/living
 	digestable = 1					// Can the mob be digested inside a belly?
+	digest_leave_remains = 0		// Will this mob leave bones/skull/etc after the melty demise?
 	allowmobvore = 0				// Will simplemobs attempt to eat the mob?
 	showvoreprefs = 1				// Determines if the mechanical vore preferences button will be displayed on the mob or not.
 	obj/belly/vore_selected			// Default to no vore capability.
@@ -10,7 +11,7 @@
 	weight_loss = 0.5 				// How fast you lose weight
 	vore_egg_type = "egg" 				// Default egg type.
 	feral = 0 						// How feral the mob is, if at all. Does nothing for non xenochimera at the moment.
-	reviving = 0					// Only used for creatures that have the xenochimera regen ability, so far.
+	revive_ready = REVIVING_READY	// Only used for creatures that have the xenochimera regen ability, so far.
 	metabolism = 0.0015
 	vore_taste = null				// What the character tastes like
 	no_vore = 0 					// If the character/mob can vore.
