@@ -568,8 +568,8 @@
 	/obj/item/clothing/under/dress/red_swept_dress=5,/obj/item/clothing/under/dress/flamenco=5,
 	/obj/item/clothing/under/dress/westernbustle=5)
 
-/obj/machinery/vending/hydroseeds_arfs
-	name = "MegaSeed Servitor"
+/obj/machinery/vending/arfs/hydroseeds
+	name = "Arfs Seed Servitor"
 	desc = "When you need seeds fast!"
 	product_slogans = "THIS'S WHERE TH' SEEDS LIVE! GIT YOU SOME!;Hands down the best seed selection on the station!;Also certain mushroom varieties available, more for experts! Get certified today!"
 	product_ads = "We like plants!;Grow some crops!;Grow, baby, growww!;Aw h'yeah son!"
@@ -584,3 +584,52 @@
 	contraband = list(/obj/item/seeds/amanitamycelium = 2,/obj/item/seeds/glowshroom = 2,/obj/item/seeds/libertymycelium = 2,/obj/item/seeds/mtearseed = 2,
 					  /obj/item/seeds/nettleseed = 2,/obj/item/seeds/reishimycelium = 2,/obj/item/seeds/reishimycelium = 2,/obj/item/seeds/shandseed = 2,)
 	premium = list(/obj/item/toy/waterflower = 1)
+
+/obj/machinery/vending/pokemonvendor
+	name = "Pokemon Vender"
+	desc = "Gotta Vend them all!"
+	product_slogans = "Vend your new partner today!"
+//	product_ads = ""
+	icon_state = "pokemon"
+	icon = 'content_arfs/icons/obj/vending.dmi'
+
+	products = list(/mob/living/simple_mob/pokemon/leg/articuno = 5,/mob/living/simple_mob/pokemon/absol = 5,
+	/mob/living/simple_mob/pokemon/aggron = 5,/mob/living/simple_mob/pokemon/ampharos = 5,
+	/mob/living/simple_mob/pokemon/charmander =5,/mob/living/simple_mob/pokemon/ditto = 5,
+	/mob/living/simple_mob/pokemon/dratini/dragonair =5,/mob/living/simple_mob/pokemon/dratini/dragonair/dragonite =5,
+	/mob/living/simple_mob/pokemon/dratini =5,/mob/living/simple_mob/pokemon/eevee = 5,
+	/mob/living/simple_mob/pokemon/eevee/espeon =5,/mob/living/simple_mob/pokemon/flaaffy =5,
+	/mob/living/simple_mob/pokemon/eevee/flareon =5,/mob/living/simple_mob/pokemon/eevee/glaceon =5,
+	/mob/living/simple_mob/pokemon/eevee/jolteon =5,/mob/living/simple_mob/pokemon/larvitar = 5,
+	/mob/living/simple_mob/pokemon/growlithe =5,/mob/living/simple_mob/pokemon/mareep =5,
+	/mob/living/simple_mob/pokemon/poochyena/mightyena =5,/mob/living/simple_mob/pokemon/miltank =5,
+	/mob/living/simple_mob/pokemon/poochyena =5,/mob/living/simple_mob/pokemon/eevee/sylveon =5,
+	/mob/living/simple_mob/pokemon/eevee/umbreon = 5,/mob/living/simple_mob/pokemon/vulpix =5,
+	/mob/living/simple_mob/pokemon/tentacruel =5,/mob/living/simple_mob/pokemon/ninetails =5,
+	/mob/living/simple_mob/pokemon/ponyta =5,/mob/living/simple_mob/pokemon/tangela =5,
+	/mob/living/simple_mob/pokemon/pincer =5,/mob/living/simple_mob/pokemon/omanyte =5,
+	/mob/living/simple_mob/pokemon/magamar =5,/mob/living/simple_mob/pokemon/magicarp =5,
+	/mob/living/simple_mob/pokemon/lapras =5,/mob/living/simple_mob/pokemon/Kabuto =5,
+	/mob/living/simple_mob/pokemon/Aerodactyl =5, /mob/living/simple_mob/pokemon/lickitung =5,
+	/mob/living/simple_mob/pokemon/cubone =5,/mob/living/simple_mob/pokemon/mewtwo =5,
+	/mob/living/simple_mob/pokemon/snorlax =5)
+	prices = list(/mob/living/simple_mob/pokemon/leg/articuno = 200,/mob/living/simple_mob/pokemon/absol = 200,
+	/mob/living/simple_mob/pokemon/aggron = 200, /mob/living/simple_mob/pokemon/ampharos = 200,
+	/mob/living/simple_mob/pokemon/charmander =200,/mob/living/simple_mob/pokemon/ditto = 200,
+	/mob/living/simple_mob/pokemon/dratini/dragonair =200,/mob/living/simple_mob/pokemon/dratini/dragonair/dragonite =200,
+	/mob/living/simple_mob/pokemon/dratini =200,/mob/living/simple_mob/pokemon/eevee = 200,
+	/mob/living/simple_mob/pokemon/eevee/espeon =200,/mob/living/simple_mob/pokemon/flaaffy =200,
+	/mob/living/simple_mob/pokemon/eevee/flareon =200,/mob/living/simple_mob/pokemon/eevee/glaceon =200,
+	/mob/living/simple_mob/pokemon/eevee/jolteon =200,/mob/living/simple_mob/pokemon/larvitar =200,
+	/mob/living/simple_mob/pokemon/growlithe =200,/mob/living/simple_mob/pokemon/mareep = 200,
+	/mob/living/simple_mob/pokemon/poochyena/mightyena =200,/mob/living/simple_mob/pokemon/miltank =200,
+	/mob/living/simple_mob/pokemon/poochyena = 200,/mob/living/simple_mob/pokemon/eevee/sylveon = 200,
+	/mob/living/simple_mob/pokemon/eevee/umbreon = 200,/mob/living/simple_mob/pokemon/vulpix =200,
+	/mob/living/simple_mob/pokemon/tentacruel =200,/mob/living/simple_mob/pokemon/ninetails = 200,
+	/mob/living/simple_mob/pokemon/ponyta = 200, /mob/living/simple_mob/pokemon/tangela = 200,
+	/mob/living/simple_mob/pokemon/pincer =200,/mob/living/simple_mob/pokemon/omanyte =200,
+	/mob/living/simple_mob/pokemon/magamar =200,/mob/living/simple_mob/pokemon/magicarp =500,
+	/mob/living/simple_mob/pokemon/lapras =200,/mob/living/simple_mob/pokemon/Kabuto =200,
+	/mob/living/simple_mob/pokemon/Aerodactyl =200,/mob/living/simple_mob/pokemon/lickitung =200,
+	/mob/living/simple_mob/pokemon/cubone =200,/mob/living/simple_mob/pokemon/mewtwo =500,
+	/mob/living/simple_mob/pokemon/snorlax =200)
