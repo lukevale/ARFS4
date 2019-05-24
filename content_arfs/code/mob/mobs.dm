@@ -1336,10 +1336,9 @@
 		user.visible_message("<span class='notice'>[user] milks [src] using \the [O].</span>")
 		var/transfered = udder.trans_id_to(G, "milk", rand(5,10))
 		if(G.reagents.total_volume >= G.volume)
-			user << "\red The [O] is full."
+			user << "<font color='red'> The udder is dry. Wait a bit longer... </font>"
 		if(!transfered)
-			user << "\red The udder is dry. Wait a bit longer..."
-	else
+			user << "<font color='red'> The udder is dry. Wait a bit longer... </font>"
 		..()
 
 /mob/living/simple_mob/pokemon/poochyena
