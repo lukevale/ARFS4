@@ -1104,15 +1104,17 @@
 	desc = "Gotta catch 'em all!"
 	icon = 'content_arfs/icons/mob/mobs/pokemon.dmi'
 	pixel_x = -16
-	health = 50
-	maxHealth = 50
+	health = 9000
+	maxHealth = 9000
 	response_help = "pets"
-//	wander = 1
-//	turns_per_move = 5
+	universal_speak = 1
 	universal_understand = 1
 	universal_speak = 1
 	density = 0//stop fucking pushing me, I'm trying to cook
 	layer = MOB_LAYER
+	vore_active = 0	//No vore for these guys.
+	has_hands = 0 //Why not
+	movement_cooldown = 5
 
 /mob/living/simple_mob/pokemon/proc/simple_lay_down()
 	set name = "Rest"
