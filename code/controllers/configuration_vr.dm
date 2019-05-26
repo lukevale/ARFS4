@@ -9,7 +9,7 @@
 	var/limit_interns = -1 //Unlimited by default
 	var/limit_visitors = -1 //Unlimited by default
 	var/pto_cap = 100 //Hours
-	var/require_flavor = FALSE
+	var/require_flavor = TRUE
 
 /hook/startup/proc/read_vs_config()
 	var/list/Lines = file2list("config/config.txt")
