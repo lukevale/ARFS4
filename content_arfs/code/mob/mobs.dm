@@ -1268,12 +1268,12 @@
 	speak_emote = list("Jolt!", "Jolteon!")
 //	var/charge_cooldown_time = 50
 //	var/charge_cooldown = 0
-/* Disabling Jolteon's attack until we can re-add it.
+// This should actually work. I think. --Cebu
 /mob/living/simple_mob/pokemon/eevee/jolteon/attack_hand(mob/user)
 	..()
 	if(!stat)
 		electrocute_mob(user, get_area(src), src, 1)
-
+/*
 /mob/living/simple_mob/pokemon/eevee/jolteon/attackby(obj/item/weapon/W, mob/user, params)
 	electrocute_mob(user, get_area(src), src, W.siemens_coefficient)
 	if(!stat && istype(W, /obj/item/weapon/stock_parts/cell))
@@ -1331,6 +1331,12 @@
 	udder = new(50)
 	udder.my_atom = src
 	..()
+
+/mob/living/simple_mob/pokemon/miltank/Life()
+	. = ..()
+	if(stat == CONSCIOUS)
+		if(udder && prob(5))
+			udder.add_reagent("milk", rand(5, 10))
 
 /mob/living/simple_mob/pokemon/miltank/attackby(var/obj/item/O as obj, var/mob/user as mob)
 	var/obj/item/weapon/reagent_containers/glass/G = O
