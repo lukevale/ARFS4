@@ -263,3 +263,17 @@
 	icon_state = "lopunnybody"
 	do_colouration = 0
 	ckeys_allowed = list("killbow")
+
+
+/datum/sprite_accessory/ears/corgihead
+	name = "corgi head, non-colorable."
+	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
+	icon_state = "corgihead"
+
+/datum/sprite_accessory/ears/corgiheadc
+	name = "corgi head, colorable."
+	icon = 'content_arfs/icons/mob/player/ears_arfs.dmi'
+	icon_state = "corgiheadc"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "corgiheadc_1"
