@@ -1115,6 +1115,7 @@
 	vore_active = 0	//No vore for these guys.
 	has_hands = 0 //Why not
 	movement_cooldown = 5
+	meat_amount = 0
 
 /mob/living/simple_mob/pokemon/proc/simple_lay_down()
 	set name = "Rest"
