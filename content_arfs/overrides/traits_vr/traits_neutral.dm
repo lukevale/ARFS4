@@ -114,3 +114,14 @@
 	..(S,H)
 	H.verbs |= /mob/living/proc/glow_toggle
 	H.verbs |= /mob/living/proc/glow_color
+
+/*
+/datum/trait/transform
+	name = "Feral Transformation"
+	desc = "Your body allows you to transform into a feral form!"
+	cost = 0
+
+/datum/trait/transform/apply(var/datum/species/S,var/mob/living/carbon/human/H)
+	..(S,H)
+	H.add_spell(new/spell/shapeshift)
+*/
