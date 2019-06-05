@@ -1116,6 +1116,8 @@
 	has_hands = 0 //Why not
 	movement_cooldown = 5
 	meat_amount = 0
+	makes_dirt = 0
+	meat_type = ""
 
 /mob/living/simple_mob/animal/pokemon/proc/simple_lay_down()
 	set name = "Rest"
