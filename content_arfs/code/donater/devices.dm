@@ -16,6 +16,7 @@
 /obj/item/weapon/commcard/owen/New()
 	..()
 	internal_devices |= new /obj/item/device/gps/owen(src)
+	internal_devices |= new /obj/item/device/resizer(src)
 
 /obj/item/weapon/commcard/owen/get_data()
 
@@ -108,3 +109,43 @@
 
 		if(href_list["active_category"])
 			internal_data["supply_category"] = href_list["active_category"]
+
+/obj/item/device/resizer
+	name = "resizer"
+	desc = "A hand-held body resizer"
+	icon_state = "health"
+	item_state = "healthanalyzer"
+	throwforce = 3
+	w_class = ITEMSIZE_SMALL
+	var/cooldown_timer = 300
+	var/cooldown = 0
+
+/obj/item/device/resizer/New()
+	..()
+
+/obj/item/device/resizer/attack(mob/living/H, mob/living/user)
+	if (!(ishuman(user) || ticker) && ticker.mode.name != "monkey")
+		to_chat(usr, "<span class='warning'>You don't have the dexterity to do this!</span>")
+		return
+	if (H != user)
+		to_chat(usr, "<span class='warning'>You should really only use this on yourself...</span>")
+		return
+	if (!cooldown)
+		var/size_name = input(user, "Pick a Size") in watch_player_sizes_list
+		if (size_name && watch_player_sizes_list[size_name] && !cooldown)
+			if(size_name=="Macro" && H.size_multiplier == 2)
+				return
+			else if(size_name == "Big" && H.size_multiplier == 1.5)
+				return
+			else if(size_name == "Normal" && H.size_multiplier == 1)
+				return
+			else if(size_name == "Small" && H.size_multiplier == 0.5)
+				return
+			else
+				cooldown = 1
+				H.resize(watch_player_sizes_list[size_name])
+				user.visible_message("<span class='notice'>[user] begins to change size!</span>", "<span class='notice'>You begin to change size! You are now [size_name].</span>")
+				sleep(cooldown_timer)
+				cooldown = 0
+	else
+		to_chat(user, "<span class='warning'>Your resizer is still recharging.</span>")
