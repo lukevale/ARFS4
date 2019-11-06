@@ -4,6 +4,8 @@
 
 [Website](https://vore-station.net) - [Forums](https://forum.vore-station.net/) - [Wiki](https://wiki.vore-station.net/)
 
+# <b><i>The ARFS4 repository is no longer actively maintained.</i></b>
+
 Going to make a Pull Request? Make sure you read the [CONTRIBUTING.md](.github/CONTRIBUTING.md) first!
 
 VOREStation is a fork of the Polaris code branch, itself a fork of the Baystation12 code branch, for the game Space Station 13.
