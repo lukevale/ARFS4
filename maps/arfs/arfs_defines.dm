@@ -102,7 +102,7 @@
 	base_turf = /turf/simulated/open
 	transit_chance = 20
 
-/datum/map_z_level/arfs/ship.three
+/datum/map_z_level/arfs/ship/three
 	z= Z_LEVEL_ARFS_THREE
 	name = "ARFS Deck 3"
 	base_turf = /turf/simulated/open
